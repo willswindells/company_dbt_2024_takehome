@@ -31,14 +31,15 @@ clean-targets:         # directories to be removed by `dbt clean`
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 # 
-models:
-  staging:
-    +materialized: view
-  intermediate:
-    +materialized: table
-    +persist_docs:
-      relation: true
-      columns: true
+#will leave this for later - should have tables after staging
+# models:
+#   staging:
+#     +materialized: view
+#   intermediate:
+#     +materialized: table
+#     +persist_docs:
+#       relation: true
+#       columns: true
 # seeds:
 #   - name: shifts
     # config:
