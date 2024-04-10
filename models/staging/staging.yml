@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_shifts
+    columns:
+      - name: shift_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_locations
+    columns:
+      - name: unit_id
+        tests:
+          - not_null
+      - name: location_id
+        tests:
+          - not_null
+
+  - name: stg_shift_applications
+    columns:
+      - name: shift_application_id
+        tests:
+          - not_null
+          - unique
+#     +materialized: view
