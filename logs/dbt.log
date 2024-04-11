@@ -6877,3 +6877,2472 @@ having count(*) > 1
 [0m22:57:27.737865 [debug] [MainThread]: Command `dbt test` failed at 22:57:27.737789 after 7.95 seconds
 [0m22:57:27.738094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5759198310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f57591ffb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f575d37f250>]}
 [0m22:57:27.738329 [debug] [MainThread]: Flushing usage events
+[0m09:52:02.200597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738cd8d83ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738cd8d32150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738cd8d336d0>]}
+
+
+============================== 09:52:02.202339 | 73e9bc37-db89-4b1f-9b09-0ef6c8a5206f ==============================
+[0m09:52:02.202339 [info ] [MainThread]: Running with dbt=1.7.11
+[0m09:52:02.202615 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/will/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/home/will/Documents/repos1/florence_dbt_2024/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:52:02.701555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca6ef9150>]}
+[0m09:52:02.761142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738cd8d4aa10>]}
+[0m09:52:02.761548 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m09:52:02.764808 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m09:52:02.771256 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m09:52:02.771509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca6bb23d0>]}
+[0m09:52:03.295273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca65c4a50>]}
+[0m09:52:03.301668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca65b4f50>]}
+[0m09:52:03.301915 [info ] [MainThread]: Found 8 models, 10 tests, 3 seeds, 0 sources, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m09:52:03.302117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca61c7390>]}
+[0m09:52:03.303157 [info ] [MainThread]: 
+[0m09:52:03.303550 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:52:03.304306 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pure-harbor-419918'
+[0m09:52:03.304605 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:52:03.778566 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pure-harbor-419918, now list_pure-harbor-419918_florencetest2)
+[0m09:52:03.778965 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:52:04.176187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca6cbf590>]}
+[0m09:52:04.176828 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m09:52:04.177190 [info ] [MainThread]: 
+[0m09:52:04.179257 [debug] [Thread-1 (]: Began running node model.florence_takehome.Q1
+[0m09:52:04.179510 [debug] [Thread-2 (]: Began running node model.florence_takehome.Q2
+[0m09:52:04.179813 [info ] [Thread-1 (]: 1 of 8 START sql view model florencetest2.Q1 ................................... [RUN]
+[0m09:52:04.180119 [info ] [Thread-2 (]: 2 of 8 START sql view model florencetest2.Q2 ................................... [RUN]
+[0m09:52:04.180519 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pure-harbor-419918_florencetest2, now model.florence_takehome.Q1)
+[0m09:52:04.180955 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.florence_takehome.Q2'
+[0m09:52:04.181186 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.Q1
+[0m09:52:04.181440 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.Q2
+[0m09:52:04.185427 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.Q1"
+[0m09:52:04.186347 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.Q2"
+[0m09:52:04.186793 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q1 (compile): 09:52:04.181618 => 09:52:04.186643
+[0m09:52:04.187070 [debug] [Thread-2 (]: Timing info for model.florence_takehome.Q2 (compile): 09:52:04.185619 => 09:52:04.186933
+[0m09:52:04.187280 [debug] [Thread-1 (]: Began executing node model.florence_takehome.Q1
+[0m09:52:04.187510 [debug] [Thread-2 (]: Began executing node model.florence_takehome.Q2
+[0m09:52:04.203307 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.Q1"
+[0m09:52:04.205065 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.Q2"
+[0m09:52:04.205516 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:52:04.205795 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:52:04.206717 [debug] [Thread-1 (]: On model.florence_takehome.Q1: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.Q1"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`Q1`
+  OPTIONS()
+  as --Who are the top 2 most common shift worker types based on
+-- posted shifts, and what’s their share of the total posted shifts?
+
+select 
+shift_worker_type,
+count(distinct shift_id) as total_shifts,
+from `shifts`
+group by 1
+order by count(distinct shift_id) desc
+limit 2
+
+select 
+sum(case when shift_worker_type in ('carer','nurse') then 1 else 0 end) /
+count(distinct shift_id)  as pct_top_two
+--83%
+from `shifts`;
+
+
+[0m09:52:04.207937 [debug] [Thread-2 (]: On model.florence_takehome.Q2: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.Q2"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`Q2`
+  OPTIONS()
+  as -- . Return shift ID and their latest created shift application ID.
+
+with max_apps as 
+(select 
+shift_id,
+shift_application_id,
+shift_application_created_at,
+ROW_NUMBER() OVER (PARTITION BY shift_id ORDER BY shift_application_created_at desc) AS recent__shift_application_created_at
+from `shift_applications`
+)
+
+-- all shifts (more than shift table...) and latest application date
+select shift_id, shift_application_id
+from max_apps
+where recent__shift_application_created_at = 1;
+
+
+[0m09:52:04.630824 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:c94133c2-c551-4cf7-816f-efee504ea6fe&page=queryresults
+[0m09:52:04.631254 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected end of input but got keyword SELECT at [17:1]; reason: invalidQuery, location: query, message: Syntax error: Expected end of input but got keyword SELECT at [17:1]')
+[0m09:52:04.677001 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:0ff3e619-0330-46d8-82fa-c9b5db4b93bb&page=queryresults
+[0m09:52:04.677404 [debug] [Thread-2 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Table "shift_applications" must be qualified with a dataset (e.g. dataset.table).; reason: invalid, location: shift_applications, message: Table "shift_applications" must be qualified with a dataset (e.g. dataset.table).')
+[0m09:52:05.370723 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:a5f6dafa-37a7-4833-a66d-56cb13f6dc79&page=queryresults
+[0m09:52:05.371130 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:a5f6dafa-37a7-4833-a66d-56cb13f6dc79&page=queryresults
+[0m09:52:05.371535 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q1 (execute): 09:52:04.187653 => 09:52:05.371395
+[0m09:52:05.375936 [debug] [Thread-1 (]: Database Error in model Q1 (models/Challanges/Q1.sql)
+  Syntax error: Expected end of input but got keyword SELECT at [17:1]
+  compiled Code at target/run/florence_takehome/models/Challanges/Q1.sql
+[0m09:52:05.376249 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca5d8e990>]}
+[0m09:52:05.376624 [error] [Thread-1 (]: 1 of 8 ERROR creating sql view model florencetest2.Q1 .......................... [[31mERROR[0m in 1.20s]
+[0m09:52:05.377049 [debug] [Thread-1 (]: Finished running node model.florence_takehome.Q1
+[0m09:52:05.377458 [debug] [Thread-1 (]: Began running node model.florence_takehome.Q3
+[0m09:52:05.378287 [info ] [Thread-1 (]: 3 of 8 START sql view model florencetest2.Q3 ................................... [RUN]
+[0m09:52:05.378858 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.Q1, now model.florence_takehome.Q3)
+[0m09:52:05.379199 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.Q3
+[0m09:52:05.380532 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.Q3"
+[0m09:52:05.380903 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q3 (compile): 09:52:05.379400 => 09:52:05.380763
+[0m09:52:05.381127 [debug] [Thread-1 (]: Began executing node model.florence_takehome.Q3
+[0m09:52:05.387258 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.Q3"
+[0m09:52:05.387585 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:52:05.388377 [debug] [Thread-1 (]: On model.florence_takehome.Q3: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.Q3"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`Q3`
+  OPTIONS()
+  as -- Which are the top 3 regions by shift fill rate (shifts with approved
+-- shift application / total shifts) for shifts posted with worker type
+-- equal to carer ?
+
+select 
+locs.location_region_title, 
+--location_region_group_title,
+sum(case when shift_application_status = 'Approved' then 1 else 0 end)
+    /
+count(distinct apps.shift_id) 
+as Shift_fill_rate
+from `stg_shift_applications` apps  
+left join 
+  `stg_shifts` shifts on apps.shift_id = shifts.shift_id
+left join
+  `stg_locations`  locs on shifts.unit_id = locs.unit_id
+where 
+  shifts.shift_worker_type = 'carer'
+--  and shift_cancelled <> 'Yes'
+group by 1
+order by Shift_fill_rate desc
+limit 3;
+
+
+[0m09:52:05.468610 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:6e75b6b7-1e26-47de-826a-7188d08959c9&page=queryresults
+[0m09:52:05.469017 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:6e75b6b7-1e26-47de-826a-7188d08959c9&page=queryresults
+[0m09:52:05.469383 [debug] [Thread-2 (]: Timing info for model.florence_takehome.Q2 (execute): 09:52:04.203486 => 09:52:05.469245
+[0m09:52:05.471100 [debug] [Thread-2 (]: Database Error in model Q2 (models/Challanges/Q2.sql)
+  Table "shift_applications" must be qualified with a dataset (e.g. dataset.table).
+  compiled Code at target/run/florence_takehome/models/Challanges/Q2.sql
+[0m09:52:05.471381 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca5dc5b90>]}
+[0m09:52:05.471733 [error] [Thread-2 (]: 2 of 8 ERROR creating sql view model florencetest2.Q2 .......................... [[31mERROR[0m in 1.29s]
+[0m09:52:05.472049 [debug] [Thread-2 (]: Finished running node model.florence_takehome.Q2
+[0m09:52:05.472297 [debug] [Thread-2 (]: Began running node model.florence_takehome.stg_locations
+[0m09:52:05.472620 [info ] [Thread-2 (]: 4 of 8 START sql view model florencetest2.stg_locations ........................ [RUN]
+[0m09:52:05.473659 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.florence_takehome.Q2, now model.florence_takehome.stg_locations)
+[0m09:52:05.474001 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.stg_locations
+[0m09:52:05.475767 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.stg_locations"
+[0m09:52:05.476159 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_locations (compile): 09:52:05.474145 => 09:52:05.476026
+[0m09:52:05.476387 [debug] [Thread-2 (]: Began executing node model.florence_takehome.stg_locations
+[0m09:52:05.478051 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.stg_locations"
+[0m09:52:05.478396 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:52:05.479235 [debug] [Thread-2 (]: On model.florence_takehome.stg_locations: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_locations"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_locations`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+locations as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`locations`
+
+),
+
+staging_locations as 
+(
+select 
+unit_id,
+location_id,
+location_region_title,
+location_region_group_title,
+from 
+locations
+)
+
+select * 
+from staging_locations;
+
+
+[0m09:52:05.815500 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:4c8b3adc-b09e-4d4b-b26b-50b321776e1d&page=queryresults
+[0m09:52:05.815897 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Table "stg_locations" must be qualified with a dataset (e.g. dataset.table).; reason: invalid, location: stg_locations, message: Table "stg_locations" must be qualified with a dataset (e.g. dataset.table).')
+[0m09:52:06.151002 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:15b52f3f-4185-499b-99e8-144ec1464a3e&page=queryresults
+[0m09:52:06.573278 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_locations (execute): 09:52:05.476519 => 09:52:06.573131
+[0m09:52:06.574427 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca616efd0>]}
+[0m09:52:06.574789 [info ] [Thread-2 (]: 4 of 8 OK created sql view model florencetest2.stg_locations ................... [[32mCREATE VIEW (0 processed)[0m in 1.10s]
+[0m09:52:06.575136 [debug] [Thread-2 (]: Finished running node model.florence_takehome.stg_locations
+[0m09:52:06.575398 [debug] [Thread-2 (]: Began running node model.florence_takehome.stg_shift_applications
+[0m09:52:06.575695 [info ] [Thread-2 (]: 5 of 8 START sql view model florencetest2.stg_shift_applications ............... [RUN]
+[0m09:52:06.576064 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_locations, now model.florence_takehome.stg_shift_applications)
+[0m09:52:06.576279 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.stg_shift_applications
+[0m09:52:06.577835 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.stg_shift_applications"
+[0m09:52:06.578224 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shift_applications (compile): 09:52:06.576410 => 09:52:06.578087
+[0m09:52:06.578446 [debug] [Thread-2 (]: Began executing node model.florence_takehome.stg_shift_applications
+[0m09:52:06.580008 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.stg_shift_applications"
+[0m09:52:06.580337 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:52:06.581213 [debug] [Thread-2 (]: On model.florence_takehome.stg_shift_applications: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_shift_applications"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_shift_applications`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+shift_applications as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`shift_applications`
+
+),
+
+staging_shift_applications as 
+(
+select 
+shift_id,
+shift_application_id,
+shift_application_created_at,
+shift_application_status,
+shift_application_cancellation_reason_description,
+from 
+shift_applications
+)
+
+select * 
+from staging_shift_applications;
+
+
+[0m09:52:06.848271 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:3175e86e-a88c-40b4-9480-97636d0626be&page=queryresults
+[0m09:52:06.848681 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:3175e86e-a88c-40b4-9480-97636d0626be&page=queryresults
+[0m09:52:06.849040 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q3 (execute): 09:52:05.381279 => 09:52:06.848906
+[0m09:52:06.850737 [debug] [Thread-1 (]: Database Error in model Q3 (models/Challanges/Q3.sql)
+  Table "stg_locations" must be qualified with a dataset (e.g. dataset.table).
+  compiled Code at target/run/florence_takehome/models/Challanges/Q3.sql
+[0m09:52:06.851021 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca5d92750>]}
+[0m09:52:06.851376 [error] [Thread-1 (]: 3 of 8 ERROR creating sql view model florencetest2.Q3 .......................... [[31mERROR[0m in 1.47s]
+[0m09:52:06.851705 [debug] [Thread-1 (]: Finished running node model.florence_takehome.Q3
+[0m09:52:06.851950 [debug] [Thread-1 (]: Began running node model.florence_takehome.stg_shifts
+[0m09:52:06.852274 [info ] [Thread-1 (]: 6 of 8 START sql view model florencetest2.stg_shifts ........................... [RUN]
+[0m09:52:06.852651 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.Q3, now model.florence_takehome.stg_shifts)
+[0m09:52:06.852867 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.stg_shifts
+[0m09:52:06.854827 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.stg_shifts"
+[0m09:52:06.855318 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_shifts (compile): 09:52:06.852999 => 09:52:06.855140
+[0m09:52:06.855649 [debug] [Thread-1 (]: Began executing node model.florence_takehome.stg_shifts
+[0m09:52:06.858057 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.stg_shifts"
+[0m09:52:06.858487 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:52:06.859310 [debug] [Thread-1 (]: On model.florence_takehome.stg_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_shifts"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+shifts as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`shifts`
+
+),
+
+staging_shifts as 
+(
+select 
+shift_id,
+unit_id,
+--PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+from 
+shifts
+)
+
+select * 
+from staging_shifts;
+
+
+[0m09:52:07.189951 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:bacbb08b-e4cc-43bb-91f7-7a08c2377b03&page=queryresults
+[0m09:52:07.480164 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:5059a491-0792-4bff-8a4e-72caf61bd504&page=queryresults
+[0m09:52:07.570645 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shift_applications (execute): 09:52:06.578579 => 09:52:07.570503
+[0m09:52:07.571173 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca5d68650>]}
+[0m09:52:07.571526 [info ] [Thread-2 (]: 5 of 8 OK created sql view model florencetest2.stg_shift_applications .......... [[32mCREATE VIEW (0 processed)[0m in 1.00s]
+[0m09:52:07.571863 [debug] [Thread-2 (]: Finished running node model.florence_takehome.stg_shift_applications
+[0m09:52:07.572129 [debug] [Thread-2 (]: Began running node model.florence_takehome.test_table
+[0m09:52:07.572451 [info ] [Thread-2 (]: 7 of 8 START sql table model florencetest2.test_table .......................... [RUN]
+[0m09:52:07.572855 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_shift_applications, now model.florence_takehome.test_table)
+[0m09:52:07.573078 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.test_table
+[0m09:52:07.574755 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.test_table"
+[0m09:52:07.575121 [debug] [Thread-2 (]: Timing info for model.florence_takehome.test_table (compile): 09:52:07.573216 => 09:52:07.574991
+[0m09:52:07.575339 [debug] [Thread-2 (]: Began executing node model.florence_takehome.test_table
+[0m09:52:07.589582 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.test_table"
+[0m09:52:07.589930 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:52:07.590720 [debug] [Thread-2 (]: On model.florence_takehome.test_table: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.test_table"} */
+
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`test_table`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+select 1 as test
+    );
+  
+[0m09:52:08.225902 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:5bf5e605-cb0b-43f1-80ad-854b8119cf9e&page=queryresults
+[0m09:52:08.231980 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_shifts (execute): 09:52:06.855848 => 09:52:08.231855
+[0m09:52:08.232416 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca556b0d0>]}
+[0m09:52:08.232762 [info ] [Thread-1 (]: 6 of 8 OK created sql view model florencetest2.stg_shifts ...................... [[32mCREATE VIEW (0 processed)[0m in 1.38s]
+[0m09:52:08.233091 [debug] [Thread-1 (]: Finished running node model.florence_takehome.stg_shifts
+[0m09:52:08.233472 [debug] [Thread-1 (]: Began running node model.florence_takehome.int_shifts
+[0m09:52:08.233728 [info ] [Thread-1 (]: 8 of 8 START sql table model florencetest2.int_shifts .......................... [RUN]
+[0m09:52:08.234093 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_shifts, now model.florence_takehome.int_shifts)
+[0m09:52:08.234306 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.int_shifts
+[0m09:52:08.236080 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.int_shifts"
+[0m09:52:08.236463 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (compile): 09:52:08.234435 => 09:52:08.236331
+[0m09:52:08.236694 [debug] [Thread-1 (]: Began executing node model.florence_takehome.int_shifts
+[0m09:52:08.237971 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:52:08.814407 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.int_shifts"
+[0m09:52:08.814873 [debug] [Thread-1 (]: On model.florence_takehome.int_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.int_shifts"} */
+
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`int_shifts`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --
+--
+--
+
+
+
+select 
+shift_id,
+unit_id,
+--change to YYYY-MMDD format 
+-- I know i am doing this twice, but i wanted to show off.
+format_date('%Y-%m-%d',
+PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+)as shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+
+case when shift_status = 0 then true else false end
+as 
+shift_filled,
+-- Add a boolean column titled shift_filled to the shifts table. Hint: If
+-- shift_status equals 0, mark it as yes otherwise no.
+
+from `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+    );
+  
+[0m09:52:09.545795 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:6180f6bd-4570-414e-b18b-055e04273dad&page=queryresults
+[0m09:52:10.223047 [debug] [Thread-2 (]: Timing info for model.florence_takehome.test_table (execute): 09:52:07.575469 => 09:52:10.222908
+[0m09:52:10.223599 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca6a63210>]}
+[0m09:52:10.223953 [info ] [Thread-2 (]: 7 of 8 OK created sql table model florencetest2.test_table ..................... [[32mCREATE TABLE (1.0 rows, 0 processed)[0m in 2.65s]
+[0m09:52:10.224301 [debug] [Thread-2 (]: Finished running node model.florence_takehome.test_table
+[0m09:52:11.526068 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (execute): 09:52:08.236825 => 09:52:11.525928
+[0m09:52:11.526569 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '73e9bc37-db89-4b1f-9b09-0ef6c8a5206f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738ca5569690>]}
+[0m09:52:11.526930 [info ] [Thread-1 (]: 8 of 8 OK created sql table model florencetest2.int_shifts ..................... [[32mCREATE TABLE (12.7k rows, 844.8 KiB processed)[0m in 3.29s]
+[0m09:52:11.527269 [debug] [Thread-1 (]: Finished running node model.florence_takehome.int_shifts
+[0m09:52:11.528376 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:52:11.528589 [debug] [MainThread]: Connection 'model.florence_takehome.int_shifts' was properly closed.
+[0m09:52:11.528770 [debug] [MainThread]: Connection 'model.florence_takehome.test_table' was properly closed.
+[0m09:52:11.528980 [info ] [MainThread]: 
+[0m09:52:11.529183 [info ] [MainThread]: Finished running 6 view models, 2 table models in 0 hours 0 minutes and 8.23 seconds (8.23s).
+[0m09:52:11.529945 [debug] [MainThread]: Command end result
+[0m09:52:11.537053 [info ] [MainThread]: 
+[0m09:52:11.537296 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m09:52:11.537485 [info ] [MainThread]: 
+[0m09:52:11.537666 [error] [MainThread]:   Database Error in model Q1 (models/Challanges/Q1.sql)
+  Syntax error: Expected end of input but got keyword SELECT at [17:1]
+  compiled Code at target/run/florence_takehome/models/Challanges/Q1.sql
+[0m09:52:11.537841 [info ] [MainThread]: 
+[0m09:52:11.538009 [error] [MainThread]:   Database Error in model Q2 (models/Challanges/Q2.sql)
+  Table "shift_applications" must be qualified with a dataset (e.g. dataset.table).
+  compiled Code at target/run/florence_takehome/models/Challanges/Q2.sql
+[0m09:52:11.538178 [info ] [MainThread]: 
+[0m09:52:11.538348 [error] [MainThread]:   Database Error in model Q3 (models/Challanges/Q3.sql)
+  Table "stg_locations" must be qualified with a dataset (e.g. dataset.table).
+  compiled Code at target/run/florence_takehome/models/Challanges/Q3.sql
+[0m09:52:11.538525 [info ] [MainThread]: 
+[0m09:52:11.538712 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=3 SKIP=0 TOTAL=8
+[0m09:52:11.539188 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 9.356055, "process_user_time": 2.241796, "process_kernel_time": 1.014093, "process_mem_max_rss": "232304", "process_in_blocks": "137136", "process_out_blocks": "3344", "command_success": false}
+[0m09:52:11.539504 [debug] [MainThread]: Command `dbt run` failed at 09:52:11.539428 after 9.36 seconds
+[0m09:52:11.539731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738cd8d3f690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738cd8d3c310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738cd8d89b90>]}
+[0m09:52:11.539952 [debug] [MainThread]: Flushing usage events
+[0m09:54:39.579620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d65dba6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d65ddfc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d65db8050>]}
+
+
+============================== 09:54:39.580906 | 5d32f451-3dc7-478f-aaae-b6932c675332 ==============================
+[0m09:54:39.580906 [info ] [MainThread]: Running with dbt=1.7.11
+[0m09:54:39.581206 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/will/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/will/Documents/repos1/florence_dbt_2024/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:54:39.925680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d34214cd0>]}
+[0m09:54:39.988897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d6664d390>]}
+[0m09:54:39.989261 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m09:54:39.992553 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m09:54:40.006169 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m09:54:40.006466 [debug] [MainThread]: Partial parsing: updated file: florence_takehome://models/Challanges/Q2.sql
+[0m09:54:40.006705 [debug] [MainThread]: Partial parsing: updated file: florence_takehome://models/Challanges/Q3.sql
+[0m09:54:40.006918 [debug] [MainThread]: Partial parsing: updated file: florence_takehome://models/Challanges/Q1.sql
+[0m09:54:40.071064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2fbd51d0>]}
+[0m09:54:40.077588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2fc88310>]}
+[0m09:54:40.077830 [info ] [MainThread]: Found 8 models, 10 tests, 3 seeds, 0 sources, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m09:54:40.078032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2fea1d50>]}
+[0m09:54:40.079020 [info ] [MainThread]: 
+[0m09:54:40.079412 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:54:40.080223 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pure-harbor-419918'
+[0m09:54:40.080515 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:54:40.470150 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pure-harbor-419918, now list_pure-harbor-419918_florencetest2)
+[0m09:54:40.470475 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:54:40.837470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2fe78a90>]}
+[0m09:54:40.837971 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m09:54:40.838188 [info ] [MainThread]: 
+[0m09:54:40.839600 [debug] [Thread-1 (]: Began running node model.florence_takehome.stg_locations
+[0m09:54:40.839888 [debug] [Thread-2 (]: Began running node model.florence_takehome.stg_shift_applications
+[0m09:54:40.840239 [info ] [Thread-1 (]: 1 of 8 START sql view model florencetest2.stg_locations ........................ [RUN]
+[0m09:54:40.840561 [info ] [Thread-2 (]: 2 of 8 START sql view model florencetest2.stg_shift_applications ............... [RUN]
+[0m09:54:40.841110 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pure-harbor-419918_florencetest2, now model.florence_takehome.stg_locations)
+[0m09:54:40.841583 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.florence_takehome.stg_shift_applications'
+[0m09:54:40.841826 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.stg_locations
+[0m09:54:40.842060 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.stg_shift_applications
+[0m09:54:40.845690 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.stg_locations"
+[0m09:54:40.847261 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.stg_shift_applications"
+[0m09:54:40.847715 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_locations (compile): 09:54:40.842207 => 09:54:40.847560
+[0m09:54:40.848001 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shift_applications (compile): 09:54:40.845864 => 09:54:40.847863
+[0m09:54:40.848217 [debug] [Thread-1 (]: Began executing node model.florence_takehome.stg_locations
+[0m09:54:40.848449 [debug] [Thread-2 (]: Began executing node model.florence_takehome.stg_shift_applications
+[0m09:54:40.866677 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.stg_locations"
+[0m09:54:40.868229 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.stg_shift_applications"
+[0m09:54:40.868613 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:54:40.868949 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:54:40.869845 [debug] [Thread-1 (]: On model.florence_takehome.stg_locations: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_locations"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_locations`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+locations as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`locations`
+
+),
+
+staging_locations as 
+(
+select 
+unit_id,
+location_id,
+location_region_title,
+location_region_group_title,
+from 
+locations
+)
+
+select * 
+from staging_locations;
+
+
+[0m09:54:40.870601 [debug] [Thread-2 (]: On model.florence_takehome.stg_shift_applications: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_shift_applications"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_shift_applications`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+shift_applications as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`shift_applications`
+
+),
+
+staging_shift_applications as 
+(
+select 
+shift_id,
+shift_application_id,
+shift_application_created_at,
+shift_application_status,
+shift_application_cancellation_reason_description,
+from 
+shift_applications
+)
+
+select * 
+from staging_shift_applications;
+
+
+[0m09:54:41.483271 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:5d6b307d-a2bc-43b7-873e-97b990f84236&page=queryresults
+[0m09:54:41.519624 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:013941c8-d449-4bb0-a60e-b0794b73f96b&page=queryresults
+[0m09:54:41.899265 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_locations (execute): 09:54:40.848590 => 09:54:41.899124
+[0m09:54:41.899744 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2fc601d0>]}
+[0m09:54:41.900114 [info ] [Thread-1 (]: 1 of 8 OK created sql view model florencetest2.stg_locations ................... [[32mCREATE VIEW (0 processed)[0m in 1.06s]
+[0m09:54:41.900529 [debug] [Thread-1 (]: Finished running node model.florence_takehome.stg_locations
+[0m09:54:41.900818 [debug] [Thread-1 (]: Began running node model.florence_takehome.stg_shifts
+[0m09:54:41.901126 [info ] [Thread-1 (]: 3 of 8 START sql view model florencetest2.stg_shifts ........................... [RUN]
+[0m09:54:41.901534 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_locations, now model.florence_takehome.stg_shifts)
+[0m09:54:41.901761 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.stg_shifts
+[0m09:54:41.903309 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.stg_shifts"
+[0m09:54:41.903681 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_shifts (compile): 09:54:41.901896 => 09:54:41.903549
+[0m09:54:41.903900 [debug] [Thread-1 (]: Began executing node model.florence_takehome.stg_shifts
+[0m09:54:41.908797 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.stg_shifts"
+[0m09:54:41.909116 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:54:41.910039 [debug] [Thread-1 (]: On model.florence_takehome.stg_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_shifts"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+shifts as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`shifts`
+
+),
+
+staging_shifts as 
+(
+select 
+shift_id,
+unit_id,
+--PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+from 
+shifts
+)
+
+select * 
+from staging_shifts;
+
+
+[0m09:54:41.929645 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shift_applications (execute): 09:54:40.858968 => 09:54:41.929529
+[0m09:54:41.930062 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2fac9050>]}
+[0m09:54:41.930369 [info ] [Thread-2 (]: 2 of 8 OK created sql view model florencetest2.stg_shift_applications .......... [[32mCREATE VIEW (0 processed)[0m in 1.09s]
+[0m09:54:41.930683 [debug] [Thread-2 (]: Finished running node model.florence_takehome.stg_shift_applications
+[0m09:54:41.930916 [debug] [Thread-2 (]: Began running node model.florence_takehome.test_table
+[0m09:54:41.931208 [info ] [Thread-2 (]: 4 of 8 START sql table model florencetest2.test_table .......................... [RUN]
+[0m09:54:41.931671 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_shift_applications, now model.florence_takehome.test_table)
+[0m09:54:41.931887 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.test_table
+[0m09:54:41.933261 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.test_table"
+[0m09:54:41.933606 [debug] [Thread-2 (]: Timing info for model.florence_takehome.test_table (compile): 09:54:41.932013 => 09:54:41.933478
+[0m09:54:41.933821 [debug] [Thread-2 (]: Began executing node model.florence_takehome.test_table
+[0m09:54:41.939018 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:54:42.321944 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.test_table"
+[0m09:54:42.322403 [debug] [Thread-2 (]: On model.florence_takehome.test_table: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.test_table"} */
+
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`test_table`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+select 1 as test
+    );
+  
+[0m09:54:42.551058 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:fc5cae09-7c42-4124-92c7-289bcb05b1be&page=queryresults
+[0m09:54:42.840091 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:0446c2a5-73a8-4347-9911-d053afffd8a0&page=queryresults
+[0m09:54:43.225666 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_shifts (execute): 09:54:41.904033 => 09:54:43.225527
+[0m09:54:43.226151 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2fc768d0>]}
+[0m09:54:43.226500 [info ] [Thread-1 (]: 3 of 8 OK created sql view model florencetest2.stg_shifts ...................... [[32mCREATE VIEW (0 processed)[0m in 1.32s]
+[0m09:54:43.226869 [debug] [Thread-1 (]: Finished running node model.florence_takehome.stg_shifts
+[0m09:54:43.227119 [debug] [Thread-1 (]: Began running node model.florence_takehome.Q2
+[0m09:54:43.227434 [info ] [Thread-1 (]: 5 of 8 START sql view model florencetest2.Q2 ................................... [RUN]
+[0m09:54:43.227885 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_shifts, now model.florence_takehome.Q2)
+[0m09:54:43.228108 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.Q2
+[0m09:54:43.229810 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.Q2"
+[0m09:54:43.230212 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q2 (compile): 09:54:43.228241 => 09:54:43.230074
+[0m09:54:43.230429 [debug] [Thread-1 (]: Began executing node model.florence_takehome.Q2
+[0m09:54:43.231987 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.Q2"
+[0m09:54:43.232311 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:54:43.233161 [debug] [Thread-1 (]: On model.florence_takehome.Q2: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.Q2"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`Q2`
+  OPTIONS()
+  as -- . Return shift ID and their latest created shift application ID.
+
+with max_apps as 
+(select 
+shift_id,
+shift_application_id,
+shift_application_created_at,
+ROW_NUMBER() OVER (PARTITION BY shift_id ORDER BY shift_application_created_at desc) AS recent__shift_application_created_at
+from  `pure-harbor-419918`.`florencetest2`.`stg_shift_applications`
+)
+
+-- all shifts (more than shift table...) and latest application date
+select shift_id, shift_application_id
+from max_apps
+where recent__shift_application_created_at = 1;
+
+
+[0m09:54:43.957869 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:20c6a10f-f0b1-4b49-8b0f-a47a4746febe&page=queryresults
+[0m09:54:44.359469 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q2 (execute): 09:54:43.230561 => 09:54:44.359330
+[0m09:54:44.359981 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2fa48210>]}
+[0m09:54:44.360327 [info ] [Thread-1 (]: 5 of 8 OK created sql view model florencetest2.Q2 .............................. [[32mCREATE VIEW (0 processed)[0m in 1.13s]
+[0m09:54:44.360669 [debug] [Thread-1 (]: Finished running node model.florence_takehome.Q2
+[0m09:54:44.360926 [debug] [Thread-1 (]: Began running node model.florence_takehome.int_shifts
+[0m09:54:44.361235 [info ] [Thread-1 (]: 6 of 8 START sql table model florencetest2.int_shifts .......................... [RUN]
+[0m09:54:44.361612 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.Q2, now model.florence_takehome.int_shifts)
+[0m09:54:44.362025 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.int_shifts
+[0m09:54:44.364446 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.int_shifts"
+[0m09:54:44.364876 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (compile): 09:54:44.362805 => 09:54:44.364738
+[0m09:54:44.365096 [debug] [Thread-1 (]: Began executing node model.florence_takehome.int_shifts
+[0m09:54:44.366156 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:54:44.738553 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.int_shifts"
+[0m09:54:44.739044 [debug] [Thread-1 (]: On model.florence_takehome.int_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.int_shifts"} */
+
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`int_shifts`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --
+--
+--
+
+
+
+select 
+shift_id,
+unit_id,
+--change to YYYY-MMDD format 
+-- I know i am doing this twice, but i wanted to show off.
+format_date('%Y-%m-%d',
+PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+)as shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+
+case when shift_status = 0 then true else false end
+as 
+shift_filled,
+-- Add a boolean column titled shift_filled to the shifts table. Hint: If
+-- shift_status equals 0, mark it as yes otherwise no.
+
+from `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+    );
+  
+[0m09:54:44.815566 [debug] [Thread-2 (]: Timing info for model.florence_takehome.test_table (execute): 09:54:41.933949 => 09:54:44.815428
+[0m09:54:44.816049 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2f960e90>]}
+[0m09:54:44.816393 [info ] [Thread-2 (]: 4 of 8 OK created sql table model florencetest2.test_table ..................... [[32mCREATE TABLE (1.0 rows, 0 processed)[0m in 2.88s]
+[0m09:54:44.816741 [debug] [Thread-2 (]: Finished running node model.florence_takehome.test_table
+[0m09:54:45.405743 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:9c1e9b79-e192-4551-b764-d017f3dc0c45&page=queryresults
+[0m09:54:47.666794 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (execute): 09:54:44.365228 => 09:54:47.666657
+[0m09:54:47.667335 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2fab2b50>]}
+[0m09:54:47.667697 [info ] [Thread-1 (]: 6 of 8 OK created sql table model florencetest2.int_shifts ..................... [[32mCREATE TABLE (12.7k rows, 844.8 KiB processed)[0m in 3.31s]
+[0m09:54:47.668086 [debug] [Thread-1 (]: Finished running node model.florence_takehome.int_shifts
+[0m09:54:47.668713 [debug] [Thread-2 (]: Began running node model.florence_takehome.Q1
+[0m09:54:47.668965 [debug] [Thread-1 (]: Began running node model.florence_takehome.Q3
+[0m09:54:47.669271 [info ] [Thread-2 (]: 7 of 8 START sql view model florencetest2.Q1 ................................... [RUN]
+[0m09:54:47.669592 [info ] [Thread-1 (]: 8 of 8 START sql view model florencetest2.Q3 ................................... [RUN]
+[0m09:54:47.670015 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.florence_takehome.test_table, now model.florence_takehome.Q1)
+[0m09:54:47.670423 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.int_shifts, now model.florence_takehome.Q3)
+[0m09:54:47.670659 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.Q1
+[0m09:54:47.670888 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.Q3
+[0m09:54:47.673618 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.Q3"
+[0m09:54:47.675710 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.Q1"
+[0m09:54:47.676136 [debug] [Thread-2 (]: Timing info for model.florence_takehome.Q1 (compile): 09:54:47.671032 => 09:54:47.675977
+[0m09:54:47.676471 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q3 (compile): 09:54:47.671761 => 09:54:47.676316
+[0m09:54:47.676733 [debug] [Thread-2 (]: Began executing node model.florence_takehome.Q1
+[0m09:54:47.677004 [debug] [Thread-1 (]: Began executing node model.florence_takehome.Q3
+[0m09:54:47.681136 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.Q3"
+[0m09:54:47.684488 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.Q1"
+[0m09:54:47.685021 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:54:47.685409 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:54:47.686207 [debug] [Thread-1 (]: On model.florence_takehome.Q3: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.Q3"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`Q3`
+  OPTIONS()
+  as -- Which are the top 3 regions by shift fill rate (shifts with approved
+-- shift application / total shifts) for shifts posted with worker type
+-- equal to carer ?
+
+select 
+locs.location_region_title, 
+--location_region_group_title,
+sum(case when shift_application_status = 'Approved' then 1 else 0 end)
+    /
+count(distinct apps.shift_id) 
+as Shift_fill_rate
+from `pure-harbor-419918`.`florencetest2`.`stg_shift_applications` apps  
+left join 
+  `pure-harbor-419918`.`florencetest2`.`int_shifts`shifts on apps.shift_id = shifts.shift_id
+left join
+  `pure-harbor-419918`.`florencetest2`.`stg_locations`  locs on shifts.unit_id = locs.unit_id
+where 
+  shifts.shift_worker_type = 'carer'
+--  and shift_cancelled <> 'Yes'
+group by 1
+order by Shift_fill_rate desc
+limit 3;
+
+
+[0m09:54:47.687178 [debug] [Thread-2 (]: On model.florence_takehome.Q1: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.Q1"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`Q1`
+  OPTIONS()
+  as --Who are the top 2 most common shift worker types based on
+-- posted shifts, and what’s their share of the total posted shifts?
+
+select 
+shift_worker_type,
+count(distinct shift_id) as total_shifts,
+from `pure-harbor-419918`.`florencetest2`.`int_shifts`
+group by 1
+order by count(distinct shift_id) desc
+limit 2
+
+select 
+sum(case when shift_worker_type in ('carer','nurse') then 1 else 0 end) /
+count(distinct shift_id)  as pct_top_two
+--83%
+from `pure-harbor-419918`.`florencetest2`.`int_shifts`;
+
+
+[0m09:54:48.061610 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:34f8efaf-a1b0-4a55-bb4a-3d470470bebd&page=queryresults
+[0m09:54:48.062011 [debug] [Thread-2 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected end of input but got keyword SELECT at [17:1]; reason: invalidQuery, location: query, message: Syntax error: Expected end of input but got keyword SELECT at [17:1]')
+[0m09:54:48.447470 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:efc9343c-360d-4d88-b7c0-47cad20f95c5&page=queryresults
+[0m09:54:48.689561 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:9a615561-ef20-48a8-808f-947a63f7a696&page=queryresults
+[0m09:54:48.690011 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:9a615561-ef20-48a8-808f-947a63f7a696&page=queryresults
+[0m09:54:48.690392 [debug] [Thread-2 (]: Timing info for model.florence_takehome.Q1 (execute): 09:54:47.677157 => 09:54:48.690248
+[0m09:54:48.693360 [debug] [Thread-2 (]: Database Error in model Q1 (models/Challanges/Q1.sql)
+  Syntax error: Expected end of input but got keyword SELECT at [17:1]
+  compiled Code at target/run/florence_takehome/models/Challanges/Q1.sql
+[0m09:54:48.693657 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2fbe7490>]}
+[0m09:54:48.694006 [error] [Thread-2 (]: 7 of 8 ERROR creating sql view model florencetest2.Q1 .......................... [[31mERROR[0m in 1.02s]
+[0m09:54:48.694337 [debug] [Thread-2 (]: Finished running node model.florence_takehome.Q1
+[0m09:54:48.841988 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q3 (execute): 09:54:47.679621 => 09:54:48.841856
+[0m09:54:48.842466 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d32f451-3dc7-478f-aaae-b6932c675332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d2f97a250>]}
+[0m09:54:48.842810 [info ] [Thread-1 (]: 8 of 8 OK created sql view model florencetest2.Q3 .............................. [[32mCREATE VIEW (0 processed)[0m in 1.17s]
+[0m09:54:48.843144 [debug] [Thread-1 (]: Finished running node model.florence_takehome.Q3
+[0m09:54:48.844222 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:54:48.844435 [debug] [MainThread]: Connection 'model.florence_takehome.Q3' was properly closed.
+[0m09:54:48.844618 [debug] [MainThread]: Connection 'model.florence_takehome.Q1' was properly closed.
+[0m09:54:48.844829 [info ] [MainThread]: 
+[0m09:54:48.845034 [info ] [MainThread]: Finished running 6 view models, 2 table models in 0 hours 0 minutes and 8.77 seconds (8.77s).
+[0m09:54:48.845774 [debug] [MainThread]: Command end result
+[0m09:54:48.851789 [info ] [MainThread]: 
+[0m09:54:48.852040 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m09:54:48.852250 [info ] [MainThread]: 
+[0m09:54:48.852436 [error] [MainThread]:   Database Error in model Q1 (models/Challanges/Q1.sql)
+  Syntax error: Expected end of input but got keyword SELECT at [17:1]
+  compiled Code at target/run/florence_takehome/models/Challanges/Q1.sql
+[0m09:54:48.852622 [info ] [MainThread]: 
+[0m09:54:48.852812 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=1 SKIP=0 TOTAL=8
+[0m09:54:48.853296 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 9.291109, "process_user_time": 1.841722, "process_kernel_time": 0.929472, "process_mem_max_rss": "226504", "process_out_blocks": "3408", "command_success": false, "process_in_blocks": "0"}
+[0m09:54:48.853607 [debug] [MainThread]: Command `dbt run` failed at 09:54:48.853529 after 9.29 seconds
+[0m09:54:48.853839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d66a593d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d65de9710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723d6a1fff50>]}
+[0m09:54:48.854051 [debug] [MainThread]: Flushing usage events
+[0m09:55:26.892647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db21cf7b190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db21cfb8150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db21cf7b6d0>]}
+
+
+============================== 09:55:26.893947 | 0b08e695-b1ad-4a28-8164-03177b131634 ==============================
+[0m09:55:26.893947 [info ] [MainThread]: Running with dbt=1.7.11
+[0m09:55:26.894250 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/will/Documents/repos1/florence_dbt_2024/logs', 'fail_fast': 'False', 'profiles_dir': '/home/will/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:55:27.242917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e71ecdd0>]}
+[0m09:55:27.307398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db21b57b890>]}
+[0m09:55:27.307769 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m09:55:27.311066 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m09:55:27.324816 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:55:27.325132 [debug] [MainThread]: Partial parsing: updated file: florence_takehome://models/Challanges/Q1.sql
+[0m09:55:27.387394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e6e67350>]}
+[0m09:55:27.393912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e697b590>]}
+[0m09:55:27.394159 [info ] [MainThread]: Found 8 models, 10 tests, 3 seeds, 0 sources, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m09:55:27.394366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e6eac8d0>]}
+[0m09:55:27.395382 [info ] [MainThread]: 
+[0m09:55:27.395789 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:55:27.396673 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pure-harbor-419918'
+[0m09:55:27.397020 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:55:27.781909 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pure-harbor-419918, now list_pure-harbor-419918_florencetest2)
+[0m09:55:27.782257 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:55:28.176065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e6d6a490>]}
+[0m09:55:28.176585 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m09:55:28.176828 [info ] [MainThread]: 
+[0m09:55:28.178109 [debug] [Thread-1 (]: Began running node model.florence_takehome.stg_locations
+[0m09:55:28.178378 [debug] [Thread-2 (]: Began running node model.florence_takehome.stg_shift_applications
+[0m09:55:28.178713 [info ] [Thread-1 (]: 1 of 8 START sql view model florencetest2.stg_locations ........................ [RUN]
+[0m09:55:28.179027 [info ] [Thread-2 (]: 2 of 8 START sql view model florencetest2.stg_shift_applications ............... [RUN]
+[0m09:55:28.179571 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pure-harbor-419918_florencetest2, now model.florence_takehome.stg_locations)
+[0m09:55:28.180045 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.florence_takehome.stg_shift_applications'
+[0m09:55:28.180291 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.stg_locations
+[0m09:55:28.180524 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.stg_shift_applications
+[0m09:55:28.184213 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.stg_locations"
+[0m09:55:28.185898 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.stg_shift_applications"
+[0m09:55:28.186343 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_locations (compile): 09:55:28.180673 => 09:55:28.186188
+[0m09:55:28.186623 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shift_applications (compile): 09:55:28.184439 => 09:55:28.186479
+[0m09:55:28.186860 [debug] [Thread-1 (]: Began executing node model.florence_takehome.stg_locations
+[0m09:55:28.187098 [debug] [Thread-2 (]: Began executing node model.florence_takehome.stg_shift_applications
+[0m09:55:28.202748 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.stg_locations"
+[0m09:55:28.204553 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.stg_shift_applications"
+[0m09:55:28.204979 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:55:28.205261 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:55:28.206165 [debug] [Thread-1 (]: On model.florence_takehome.stg_locations: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_locations"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_locations`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+locations as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`locations`
+
+),
+
+staging_locations as 
+(
+select 
+unit_id,
+location_id,
+location_region_title,
+location_region_group_title,
+from 
+locations
+)
+
+select * 
+from staging_locations;
+
+
+[0m09:55:28.206955 [debug] [Thread-2 (]: On model.florence_takehome.stg_shift_applications: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_shift_applications"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_shift_applications`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+shift_applications as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`shift_applications`
+
+),
+
+staging_shift_applications as 
+(
+select 
+shift_id,
+shift_application_id,
+shift_application_created_at,
+shift_application_status,
+shift_application_cancellation_reason_description,
+from 
+shift_applications
+)
+
+select * 
+from staging_shift_applications;
+
+
+[0m09:55:28.838407 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:9c3e3d8f-4cf2-4ab5-8f55-749f67358834&page=queryresults
+[0m09:55:28.850597 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:bfb7ac25-3f2b-4234-9312-b1975f644914&page=queryresults
+[0m09:55:29.242041 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_locations (execute): 09:55:28.187243 => 09:55:29.241899
+[0m09:55:29.242501 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e69a0b10>]}
+[0m09:55:29.242860 [info ] [Thread-1 (]: 1 of 8 OK created sql view model florencetest2.stg_locations ................... [[32mCREATE VIEW (0 processed)[0m in 1.06s]
+[0m09:55:29.243218 [debug] [Thread-1 (]: Finished running node model.florence_takehome.stg_locations
+[0m09:55:29.243486 [debug] [Thread-1 (]: Began running node model.florence_takehome.stg_shifts
+[0m09:55:29.243794 [info ] [Thread-1 (]: 3 of 8 START sql view model florencetest2.stg_shifts ........................... [RUN]
+[0m09:55:29.244175 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_locations, now model.florence_takehome.stg_shifts)
+[0m09:55:29.244393 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.stg_shifts
+[0m09:55:29.245957 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.stg_shifts"
+[0m09:55:29.246332 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_shifts (compile): 09:55:29.244525 => 09:55:29.246195
+[0m09:55:29.246564 [debug] [Thread-1 (]: Began executing node model.florence_takehome.stg_shifts
+[0m09:55:29.251488 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.stg_shifts"
+[0m09:55:29.251829 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:55:29.252628 [debug] [Thread-1 (]: On model.florence_takehome.stg_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_shifts"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+shifts as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`shifts`
+
+),
+
+staging_shifts as 
+(
+select 
+shift_id,
+unit_id,
+--PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+from 
+shifts
+)
+
+select * 
+from staging_shifts;
+
+
+[0m09:55:29.322395 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shift_applications (execute): 09:55:28.202901 => 09:55:29.322253
+[0m09:55:29.322904 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e69ea510>]}
+[0m09:55:29.323283 [info ] [Thread-2 (]: 2 of 8 OK created sql view model florencetest2.stg_shift_applications .......... [[32mCREATE VIEW (0 processed)[0m in 1.14s]
+[0m09:55:29.323656 [debug] [Thread-2 (]: Finished running node model.florence_takehome.stg_shift_applications
+[0m09:55:29.323915 [debug] [Thread-2 (]: Began running node model.florence_takehome.test_table
+[0m09:55:29.324277 [info ] [Thread-2 (]: 4 of 8 START sql table model florencetest2.test_table .......................... [RUN]
+[0m09:55:29.324717 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_shift_applications, now model.florence_takehome.test_table)
+[0m09:55:29.324942 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.test_table
+[0m09:55:29.326589 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.test_table"
+[0m09:55:29.326972 [debug] [Thread-2 (]: Timing info for model.florence_takehome.test_table (compile): 09:55:29.325072 => 09:55:29.326840
+[0m09:55:29.327199 [debug] [Thread-2 (]: Began executing node model.florence_takehome.test_table
+[0m09:55:29.332564 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:55:29.704970 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.test_table"
+[0m09:55:29.705409 [debug] [Thread-2 (]: On model.florence_takehome.test_table: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.test_table"} */
+
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`test_table`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+select 1 as test
+    );
+  
+[0m09:55:29.851582 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:abc4328d-6ae2-41b8-a567-3b9fce30a242&page=queryresults
+[0m09:55:30.215397 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_shifts (execute): 09:55:29.246709 => 09:55:30.215257
+[0m09:55:30.215854 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e6e47cd0>]}
+[0m09:55:30.216207 [info ] [Thread-1 (]: 3 of 8 OK created sql view model florencetest2.stg_shifts ...................... [[32mCREATE VIEW (0 processed)[0m in 0.97s]
+[0m09:55:30.216571 [debug] [Thread-1 (]: Finished running node model.florence_takehome.stg_shifts
+[0m09:55:30.216847 [debug] [Thread-1 (]: Began running node model.florence_takehome.Q2
+[0m09:55:30.217164 [info ] [Thread-1 (]: 5 of 8 START sql view model florencetest2.Q2 ................................... [RUN]
+[0m09:55:30.217615 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_shifts, now model.florence_takehome.Q2)
+[0m09:55:30.217838 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.Q2
+[0m09:55:30.219519 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.Q2"
+[0m09:55:30.219908 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q2 (compile): 09:55:30.217971 => 09:55:30.219750
+[0m09:55:30.220142 [debug] [Thread-1 (]: Began executing node model.florence_takehome.Q2
+[0m09:55:30.221928 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.Q2"
+[0m09:55:30.222341 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:f1a798f6-9b33-46a2-99b0-9cae407cfa64&page=queryresults
+[0m09:55:30.223255 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:55:30.224123 [debug] [Thread-1 (]: On model.florence_takehome.Q2: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.Q2"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`Q2`
+  OPTIONS()
+  as -- . Return shift ID and their latest created shift application ID.
+
+with max_apps as 
+(select 
+shift_id,
+shift_application_id,
+shift_application_created_at,
+ROW_NUMBER() OVER (PARTITION BY shift_id ORDER BY shift_application_created_at desc) AS recent__shift_application_created_at
+from  `pure-harbor-419918`.`florencetest2`.`stg_shift_applications`
+)
+
+-- all shifts (more than shift table...) and latest application date
+select shift_id, shift_application_id
+from max_apps
+where recent__shift_application_created_at = 1;
+
+
+[0m09:55:30.915298 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:a5dc64ff-7276-4997-8515-46b64b9609c1&page=queryresults
+[0m09:55:31.301254 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q2 (execute): 09:55:30.220481 => 09:55:31.301117
+[0m09:55:31.301728 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e6e88150>]}
+[0m09:55:31.302091 [info ] [Thread-1 (]: 5 of 8 OK created sql view model florencetest2.Q2 .............................. [[32mCREATE VIEW (0 processed)[0m in 1.08s]
+[0m09:55:31.302434 [debug] [Thread-1 (]: Finished running node model.florence_takehome.Q2
+[0m09:55:31.302693 [debug] [Thread-1 (]: Began running node model.florence_takehome.int_shifts
+[0m09:55:31.302994 [info ] [Thread-1 (]: 6 of 8 START sql table model florencetest2.int_shifts .......................... [RUN]
+[0m09:55:31.303378 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.Q2, now model.florence_takehome.int_shifts)
+[0m09:55:31.303596 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.int_shifts
+[0m09:55:31.305344 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.int_shifts"
+[0m09:55:31.305753 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (compile): 09:55:31.303727 => 09:55:31.305610
+[0m09:55:31.305971 [debug] [Thread-1 (]: Began executing node model.florence_takehome.int_shifts
+[0m09:55:31.307040 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:55:31.730844 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.int_shifts"
+[0m09:55:31.731307 [debug] [Thread-1 (]: On model.florence_takehome.int_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.int_shifts"} */
+
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`int_shifts`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --
+--
+--
+
+
+
+select 
+shift_id,
+unit_id,
+--change to YYYY-MMDD format 
+-- I know i am doing this twice, but i wanted to show off.
+format_date('%Y-%m-%d',
+PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+)as shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+
+case when shift_status = 0 then true else false end
+as 
+shift_filled,
+-- Add a boolean column titled shift_filled to the shifts table. Hint: If
+-- shift_status equals 0, mark it as yes otherwise no.
+
+from `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+    );
+  
+[0m09:55:32.184896 [debug] [Thread-2 (]: Timing info for model.florence_takehome.test_table (execute): 09:55:29.327336 => 09:55:32.184753
+[0m09:55:32.185367 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e6e64d90>]}
+[0m09:55:32.185711 [info ] [Thread-2 (]: 4 of 8 OK created sql table model florencetest2.test_table ..................... [[32mCREATE TABLE (1.0 rows, 0 processed)[0m in 2.86s]
+[0m09:55:32.186075 [debug] [Thread-2 (]: Finished running node model.florence_takehome.test_table
+[0m09:55:32.385280 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:7158d71b-0d88-4488-993d-5f308d863a56&page=queryresults
+[0m09:55:34.595236 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (execute): 09:55:31.306100 => 09:55:34.595100
+[0m09:55:34.595732 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e6df4210>]}
+[0m09:55:34.596074 [info ] [Thread-1 (]: 6 of 8 OK created sql table model florencetest2.int_shifts ..................... [[32mCREATE TABLE (12.7k rows, 844.8 KiB processed)[0m in 3.29s]
+[0m09:55:34.596412 [debug] [Thread-1 (]: Finished running node model.florence_takehome.int_shifts
+[0m09:55:34.597034 [debug] [Thread-2 (]: Began running node model.florence_takehome.Q1
+[0m09:55:34.597293 [debug] [Thread-1 (]: Began running node model.florence_takehome.Q3
+[0m09:55:34.597577 [info ] [Thread-2 (]: 7 of 8 START sql view model florencetest2.Q1 ................................... [RUN]
+[0m09:55:34.597882 [info ] [Thread-1 (]: 8 of 8 START sql view model florencetest2.Q3 ................................... [RUN]
+[0m09:55:34.598295 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.florence_takehome.test_table, now model.florence_takehome.Q1)
+[0m09:55:34.598695 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.int_shifts, now model.florence_takehome.Q3)
+[0m09:55:34.598931 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.Q1
+[0m09:55:34.599158 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.Q3
+[0m09:55:34.601802 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.Q3"
+[0m09:55:34.604053 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.Q1"
+[0m09:55:34.604464 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q3 (compile): 09:55:34.600052 => 09:55:34.604318
+[0m09:55:34.604744 [debug] [Thread-2 (]: Timing info for model.florence_takehome.Q1 (compile): 09:55:34.599300 => 09:55:34.604609
+[0m09:55:34.604960 [debug] [Thread-1 (]: Began executing node model.florence_takehome.Q3
+[0m09:55:34.605192 [debug] [Thread-2 (]: Began executing node model.florence_takehome.Q1
+[0m09:55:34.606876 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.Q3"
+[0m09:55:34.610872 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:55:34.613092 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.Q1"
+[0m09:55:34.614311 [debug] [Thread-1 (]: On model.florence_takehome.Q3: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.Q3"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`Q3`
+  OPTIONS()
+  as -- Which are the top 3 regions by shift fill rate (shifts with approved
+-- shift application / total shifts) for shifts posted with worker type
+-- equal to carer ?
+
+select 
+locs.location_region_title, 
+--location_region_group_title,
+sum(case when shift_application_status = 'Approved' then 1 else 0 end)
+    /
+count(distinct apps.shift_id) 
+as Shift_fill_rate
+from `pure-harbor-419918`.`florencetest2`.`stg_shift_applications` apps  
+left join 
+  `pure-harbor-419918`.`florencetest2`.`int_shifts`shifts on apps.shift_id = shifts.shift_id
+left join
+  `pure-harbor-419918`.`florencetest2`.`stg_locations`  locs on shifts.unit_id = locs.unit_id
+where 
+  shifts.shift_worker_type = 'carer'
+--  and shift_cancelled <> 'Yes'
+group by 1
+order by Shift_fill_rate desc
+limit 3;
+
+
+[0m09:55:34.614832 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:55:34.633354 [debug] [Thread-2 (]: On model.florence_takehome.Q1: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.Q1"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`Q1`
+  OPTIONS()
+  as --Who are the top 2 most common shift worker types based on
+-- posted shifts, and what’s their share of the total posted shifts?
+
+-- select 
+-- shift_worker_type,
+-- count(distinct shift_id) as total_shifts,
+-- from `pure-harbor-419918`.`florencetest2`.`int_shifts`
+-- group by 1
+-- order by count(distinct shift_id) desc
+-- limit 2
+
+select 
+sum(case when shift_worker_type in ('carer','nurse') then 1 else 0 end) /
+count(distinct shift_id)  as pct_top_two
+--83%
+from `pure-harbor-419918`.`florencetest2`.`int_shifts`;
+
+
+[0m09:55:35.196171 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:7385eac0-2a80-4af2-b74e-87e749e96f43&page=queryresults
+[0m09:55:35.348213 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:792de75b-1599-4980-bf14-7d86e37f78e0&page=queryresults
+[0m09:55:35.611605 [debug] [Thread-2 (]: Timing info for model.florence_takehome.Q1 (execute): 09:55:34.607033 => 09:55:35.611467
+[0m09:55:35.612091 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e652bd90>]}
+[0m09:55:35.612434 [info ] [Thread-2 (]: 7 of 8 OK created sql view model florencetest2.Q1 .............................. [[32mCREATE VIEW (0 processed)[0m in 1.01s]
+[0m09:55:35.612790 [debug] [Thread-2 (]: Finished running node model.florence_takehome.Q1
+[0m09:55:35.746774 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q3 (execute): 09:55:34.605338 => 09:55:35.746656
+[0m09:55:35.747184 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b08e695-b1ad-4a28-8164-03177b131634', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1e654c350>]}
+[0m09:55:35.747489 [info ] [Thread-1 (]: 8 of 8 OK created sql view model florencetest2.Q3 .............................. [[32mCREATE VIEW (0 processed)[0m in 1.15s]
+[0m09:55:35.747810 [debug] [Thread-1 (]: Finished running node model.florence_takehome.Q3
+[0m09:55:35.748762 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:55:35.748972 [debug] [MainThread]: Connection 'model.florence_takehome.Q3' was properly closed.
+[0m09:55:35.749152 [debug] [MainThread]: Connection 'model.florence_takehome.Q1' was properly closed.
+[0m09:55:35.749357 [info ] [MainThread]: 
+[0m09:55:35.749562 [info ] [MainThread]: Finished running 6 view models, 2 table models in 0 hours 0 minutes and 8.35 seconds (8.35s).
+[0m09:55:35.750314 [debug] [MainThread]: Command end result
+[0m09:55:35.755904 [info ] [MainThread]: 
+[0m09:55:35.756138 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:55:35.756336 [info ] [MainThread]: 
+[0m09:55:35.756539 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m09:55:35.757026 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.881847, "process_user_time": 1.877041, "process_kernel_time": 0.894615, "process_mem_max_rss": "225512", "process_out_blocks": "3256", "process_in_blocks": "0"}
+[0m09:55:35.757335 [debug] [MainThread]: Command `dbt run` succeeded at 09:55:35.757259 after 8.88 seconds
+[0m09:55:35.757549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db2213fff50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db2212b02d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db2212e0f50>]}
+[0m09:55:35.757760 [debug] [MainThread]: Flushing usage events
+[0m09:56:38.080867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b496e7f9fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b496e1a4050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b496e15b250>]}
+
+
+============================== 09:56:38.082124 | f0b00be8-924b-4ac5-ad79-8e32580018c9 ==============================
+[0m09:56:38.082124 [info ] [MainThread]: Running with dbt=1.7.11
+[0m09:56:38.082411 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/will/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/will/Documents/repos1/florence_dbt_2024/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:56:38.431924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f0b00be8-924b-4ac5-ad79-8e32580018c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b493c3f25d0>]}
+[0m09:56:38.493950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f0b00be8-924b-4ac5-ad79-8e32580018c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b493c3bf990>]}
+[0m09:56:38.494305 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m09:56:38.497554 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m09:56:38.511208 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:56:38.511514 [debug] [MainThread]: Partial parsing: updated file: florence_takehome://models/intermediate/int_shifts.sql
+[0m09:56:38.560935 [error] [MainThread]: Encountered an error:
+Compilation Error in model int_shifts (models/intermediate/int_shifts.sql)
+  expected token ',', got 'incremental_strategy'
+    line 8
+      incremental_strategy = 'insert_overwrite',
+[0m09:56:38.561395 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.49807954, "process_user_time": 1.408103, "process_kernel_time": 0.851664, "process_mem_max_rss": "207816", "process_in_blocks": "8", "process_out_blocks": "16", "command_success": false}
+[0m09:56:38.561771 [debug] [MainThread]: Command `dbt run` failed at 09:56:38.561692 after 0.50 seconds
+[0m09:56:38.561971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b496e164410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b496e172710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b493c155350>]}
+[0m09:56:38.562178 [debug] [MainThread]: Flushing usage events
+[0m09:57:22.959549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706cb02a1450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706cb02a3310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706cb02a3710>]}
+
+
+============================== 09:57:22.960904 | 30f9c325-3d2b-4e5e-a5d6-d68f97a88375 ==============================
+[0m09:57:22.960904 [info ] [MainThread]: Running with dbt=1.7.11
+[0m09:57:22.961209 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/will/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/will/Documents/repos1/florence_dbt_2024/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:57:23.307378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7e4be090>]}
+[0m09:57:23.372399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7e42ccd0>]}
+[0m09:57:23.372766 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m09:57:23.376112 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m09:57:23.389849 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:57:23.390172 [debug] [MainThread]: Partial parsing: updated file: florence_takehome://models/intermediate/int_shifts.sql
+[0m09:57:23.512126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7d501bd0>]}
+[0m09:57:23.518878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7de4bcd0>]}
+[0m09:57:23.519118 [info ] [MainThread]: Found 8 models, 10 tests, 3 seeds, 0 sources, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m09:57:23.519313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7d928e50>]}
+[0m09:57:23.520291 [info ] [MainThread]: 
+[0m09:57:23.520672 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:57:23.521427 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pure-harbor-419918'
+[0m09:57:23.521722 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:57:23.933993 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pure-harbor-419918, now list_pure-harbor-419918_florencetest2)
+[0m09:57:23.934316 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:57:24.334178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7d95ea90>]}
+[0m09:57:24.334650 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m09:57:24.334853 [info ] [MainThread]: 
+[0m09:57:24.336361 [debug] [Thread-1 (]: Began running node model.florence_takehome.stg_locations
+[0m09:57:24.336661 [info ] [Thread-1 (]: 1 of 8 START sql view model florencetest2.stg_locations ........................ [RUN]
+[0m09:57:24.336935 [debug] [Thread-2 (]: Began running node model.florence_takehome.stg_shift_applications
+[0m09:57:24.337323 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pure-harbor-419918_florencetest2, now model.florence_takehome.stg_locations)
+[0m09:57:24.337607 [info ] [Thread-2 (]: 2 of 8 START sql view model florencetest2.stg_shift_applications ............... [RUN]
+[0m09:57:24.337869 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.stg_locations
+[0m09:57:24.338304 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.florence_takehome.stg_shift_applications'
+[0m09:57:24.341689 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.stg_locations"
+[0m09:57:24.341951 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.stg_shift_applications
+[0m09:57:24.343365 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.stg_shift_applications"
+[0m09:57:24.343696 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_locations (compile): 09:57:24.338453 => 09:57:24.343552
+[0m09:57:24.343930 [debug] [Thread-1 (]: Began executing node model.florence_takehome.stg_locations
+[0m09:57:24.349267 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shift_applications (compile): 09:57:24.342155 => 09:57:24.349126
+[0m09:57:24.359016 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.stg_locations"
+[0m09:57:24.359311 [debug] [Thread-2 (]: Began executing node model.florence_takehome.stg_shift_applications
+[0m09:57:24.362065 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:57:24.363891 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.stg_shift_applications"
+[0m09:57:24.365044 [debug] [Thread-1 (]: On model.florence_takehome.stg_locations: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_locations"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_locations`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+locations as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`locations`
+
+),
+
+staging_locations as 
+(
+select 
+unit_id,
+location_id,
+location_region_title,
+location_region_group_title,
+from 
+locations
+)
+
+select * 
+from staging_locations;
+
+
+[0m09:57:24.382794 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:57:24.383726 [debug] [Thread-2 (]: On model.florence_takehome.stg_shift_applications: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_shift_applications"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_shift_applications`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+shift_applications as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`shift_applications`
+
+),
+
+staging_shift_applications as 
+(
+select 
+shift_id,
+shift_application_id,
+shift_application_created_at,
+shift_application_status,
+shift_application_cancellation_reason_description,
+from 
+shift_applications
+)
+
+select * 
+from staging_shift_applications;
+
+
+[0m09:57:24.973992 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:048e4449-227c-45fc-9b14-e43035eec351&page=queryresults
+[0m09:57:25.124329 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:f50cf908-82b7-4437-8b38-56f3923e5f8a&page=queryresults
+[0m09:57:25.502143 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_locations (execute): 09:57:24.344061 => 09:57:25.502004
+[0m09:57:25.502619 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7d520490>]}
+[0m09:57:25.502974 [info ] [Thread-1 (]: 1 of 8 OK created sql view model florencetest2.stg_locations ................... [[32mCREATE VIEW (0 processed)[0m in 1.17s]
+[0m09:57:25.503348 [debug] [Thread-1 (]: Finished running node model.florence_takehome.stg_locations
+[0m09:57:25.503604 [debug] [Thread-1 (]: Began running node model.florence_takehome.stg_shifts
+[0m09:57:25.503943 [info ] [Thread-1 (]: 3 of 8 START sql view model florencetest2.stg_shifts ........................... [RUN]
+[0m09:57:25.504354 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_locations, now model.florence_takehome.stg_shifts)
+[0m09:57:25.504582 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.stg_shifts
+[0m09:57:25.506113 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.stg_shifts"
+[0m09:57:25.506493 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_shifts (compile): 09:57:25.504717 => 09:57:25.506355
+[0m09:57:25.506718 [debug] [Thread-1 (]: Began executing node model.florence_takehome.stg_shifts
+[0m09:57:25.508274 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.stg_shifts"
+[0m09:57:25.508579 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:57:25.509389 [debug] [Thread-1 (]: On model.florence_takehome.stg_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_shifts"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+shifts as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`shifts`
+
+),
+
+staging_shifts as 
+(
+select 
+shift_id,
+unit_id,
+--PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+from 
+shifts
+)
+
+select * 
+from staging_shifts;
+
+
+[0m09:57:25.655714 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shift_applications (execute): 09:57:24.359543 => 09:57:25.655573
+[0m09:57:25.656223 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7d5bb7d0>]}
+[0m09:57:25.656595 [info ] [Thread-2 (]: 2 of 8 OK created sql view model florencetest2.stg_shift_applications .......... [[32mCREATE VIEW (0 processed)[0m in 1.32s]
+[0m09:57:25.656959 [debug] [Thread-2 (]: Finished running node model.florence_takehome.stg_shift_applications
+[0m09:57:25.657214 [debug] [Thread-2 (]: Began running node model.florence_takehome.test_table
+[0m09:57:25.657580 [info ] [Thread-2 (]: 4 of 8 START sql table model florencetest2.test_table .......................... [RUN]
+[0m09:57:25.657986 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_shift_applications, now model.florence_takehome.test_table)
+[0m09:57:25.658212 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.test_table
+[0m09:57:25.659726 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.test_table"
+[0m09:57:25.660113 [debug] [Thread-2 (]: Timing info for model.florence_takehome.test_table (compile): 09:57:25.658347 => 09:57:25.659982
+[0m09:57:25.660330 [debug] [Thread-2 (]: Began executing node model.florence_takehome.test_table
+[0m09:57:25.665719 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:57:26.041641 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.test_table"
+[0m09:57:26.042086 [debug] [Thread-2 (]: On model.florence_takehome.test_table: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.test_table"} */
+
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`test_table`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+select 1 as test
+    );
+  
+[0m09:57:26.091011 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:d816ff25-6b90-47f1-bc98-1c14b5861926&page=queryresults
+[0m09:57:26.484928 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_shifts (execute): 09:57:25.506852 => 09:57:26.484788
+[0m09:57:26.485439 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7d5eb410>]}
+[0m09:57:26.485795 [info ] [Thread-1 (]: 3 of 8 OK created sql view model florencetest2.stg_shifts ...................... [[32mCREATE VIEW (0 processed)[0m in 0.98s]
+[0m09:57:26.486160 [debug] [Thread-1 (]: Finished running node model.florence_takehome.stg_shifts
+[0m09:57:26.486434 [debug] [Thread-1 (]: Began running node model.florence_takehome.Q2
+[0m09:57:26.486764 [info ] [Thread-1 (]: 5 of 8 START sql view model florencetest2.Q2 ................................... [RUN]
+[0m09:57:26.487255 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_shifts, now model.florence_takehome.Q2)
+[0m09:57:26.487477 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.Q2
+[0m09:57:26.489175 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.Q2"
+[0m09:57:26.489574 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q2 (compile): 09:57:26.487610 => 09:57:26.489432
+[0m09:57:26.489790 [debug] [Thread-1 (]: Began executing node model.florence_takehome.Q2
+[0m09:57:26.491392 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.Q2"
+[0m09:57:26.491938 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:c3cef00f-9c40-48f6-8b0b-a6b1f34fd349&page=queryresults
+[0m09:57:26.492203 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:57:26.493714 [debug] [Thread-1 (]: On model.florence_takehome.Q2: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.Q2"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`Q2`
+  OPTIONS()
+  as -- . Return shift ID and their latest created shift application ID.
+
+with max_apps as 
+(select 
+shift_id,
+shift_application_id,
+shift_application_created_at,
+ROW_NUMBER() OVER (PARTITION BY shift_id ORDER BY shift_application_created_at desc) AS recent__shift_application_created_at
+from  `pure-harbor-419918`.`florencetest2`.`stg_shift_applications`
+)
+
+-- all shifts (more than shift table...) and latest application date
+select shift_id, shift_application_id
+from max_apps
+where recent__shift_application_created_at = 1;
+
+
+[0m09:57:27.224506 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:1ef7e205-b796-42d1-8b86-18696cb56b31&page=queryresults
+[0m09:57:27.638913 [debug] [Thread-1 (]: Timing info for model.florence_takehome.Q2 (execute): 09:57:26.489938 => 09:57:27.638778
+[0m09:57:27.639426 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7de0e350>]}
+[0m09:57:27.639775 [info ] [Thread-1 (]: 5 of 8 OK created sql view model florencetest2.Q2 .............................. [[32mCREATE VIEW (0 processed)[0m in 1.15s]
+[0m09:57:27.640153 [debug] [Thread-1 (]: Finished running node model.florence_takehome.Q2
+[0m09:57:27.640422 [debug] [Thread-1 (]: Began running node model.florence_takehome.int_shifts
+[0m09:57:27.640723 [info ] [Thread-1 (]: 6 of 8 START sql incremental model florencetest2.int_shifts .................... [RUN]
+[0m09:57:27.641143 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.Q2, now model.florence_takehome.int_shifts)
+[0m09:57:27.641370 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.int_shifts
+[0m09:57:27.643334 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.int_shifts"
+[0m09:57:27.643712 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (compile): 09:57:27.641500 => 09:57:27.643581
+[0m09:57:27.643927 [debug] [Thread-1 (]: Began executing node model.florence_takehome.int_shifts
+[0m09:57:27.669300 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:57:28.055805 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.int_shifts"
+[0m09:57:28.056293 [debug] [Thread-1 (]: On model.florence_takehome.int_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.int_shifts"} */
+
+   
+      -- generated script to merge partitions into `pure-harbor-419918`.`florencetest2`.`int_shifts`
+      declare dbt_partitions_for_replacement array<timestamp>;
+
+      
+      
+       -- 1. create a temp table with model data
+        
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      
+    partition by timestamp_trunc(shift_start_date, day)
+    cluster by shift_start_date
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      --
+-- as incremental just for show...
+--
+
+
+
+select 
+shift_id,
+unit_id,
+--change to YYYY-MMDD format 
+-- I know i am doing this twice, but i wanted to show off.
+format_date('%Y-%m-%d',
+PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+)as shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+
+case when shift_status = 0 then true else false end
+as 
+shift_filled,
+-- Add a boolean column titled shift_filled to the shifts table. Hint: If
+-- shift_status equals 0, mark it as yes otherwise no.
+
+from `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+    );
+  
+      -- 2. define partitions to update
+      set (dbt_partitions_for_replacement) = (
+          select as struct
+              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+              array_agg(distinct timestamp_trunc(shift_start_date, day) IGNORE NULLS)
+          from `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      );
+
+      -- 3. run the merge statement
+      
+
+    merge into `pure-harbor-419918`.`florencetest2`.`int_shifts` as DBT_INTERNAL_DEST
+        using (
+        select
+        * from `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      ) as DBT_INTERNAL_SOURCE
+        on FALSE
+
+    when not matched by source
+         and timestamp_trunc(DBT_INTERNAL_DEST.shift_start_date, day) in unnest(dbt_partitions_for_replacement) 
+        then delete
+
+    when not matched then insert
+        (`shift_id`, `unit_id`, `shift_start_date`, `shift_worker_type`, `shift_status`, `shift_cancelled`, `shift_filled`)
+    values
+        (`shift_id`, `unit_id`, `shift_start_date`, `shift_worker_type`, `shift_status`, `shift_cancelled`, `shift_filled`)
+
+;
+
+      -- 4. clean up the temp table
+      drop table if exists `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+
+  
+
+
+  
+
+    
+[0m09:57:28.320130 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:e1fdd475-3d9b-4403-8c51-4abbe5cd2315&page=queryresults
+[0m09:57:28.486382 [debug] [Thread-2 (]: Timing info for model.florence_takehome.test_table (execute): 09:57:25.660462 => 09:57:28.486240
+[0m09:57:28.486907 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7d546890>]}
+[0m09:57:28.487261 [info ] [Thread-2 (]: 4 of 8 OK created sql table model florencetest2.test_table ..................... [[32mCREATE TABLE (1.0 rows, 0 processed)[0m in 2.83s]
+[0m09:57:28.487611 [debug] [Thread-2 (]: Finished running node model.florence_takehome.test_table
+[0m09:57:29.442378 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Query error: No matching signature for function TIMESTAMP_TRUNC for argument types: STRING, DATE_TIME_PART. Supported signatures: TIMESTAMP_TRUNC(TIMESTAMP, DATE_TIME_PART, [STRING]); TIMESTAMP_TRUNC(DATETIME, DATE_TIME_PART) at [16:18]')
+[0m09:57:30.249173 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:674ba70e-21a9-4f96-ab41-59723b5334f9&page=queryresults
+[0m09:57:31.098324 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:674ba70e-21a9-4f96-ab41-59723b5334f9&page=queryresults
+[0m09:57:31.098835 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (execute): 09:57:27.644059 => 09:57:31.098678
+[0m09:57:31.101602 [debug] [Thread-1 (]: Database Error in model int_shifts (models/intermediate/int_shifts.sql)
+  Query error: No matching signature for function TIMESTAMP_TRUNC for argument types: STRING, DATE_TIME_PART. Supported signatures: TIMESTAMP_TRUNC(TIMESTAMP, DATE_TIME_PART, [STRING]); TIMESTAMP_TRUNC(DATETIME, DATE_TIME_PART) at [16:18]
+  compiled Code at target/run/florence_takehome/models/intermediate/int_shifts.sql
+[0m09:57:31.101900 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30f9c325-3d2b-4e5e-a5d6-d68f97a88375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706c7df01d50>]}
+[0m09:57:31.102249 [error] [Thread-1 (]: 6 of 8 ERROR creating sql incremental model florencetest2.int_shifts ........... [[31mERROR[0m in 3.46s]
+[0m09:57:31.102608 [debug] [Thread-1 (]: Finished running node model.florence_takehome.int_shifts
+[0m09:57:31.103667 [debug] [Thread-2 (]: Began running node model.florence_takehome.Q1
+[0m09:57:31.103976 [debug] [Thread-1 (]: Began running node model.florence_takehome.Q3
+[0m09:57:31.104337 [info ] [Thread-2 (]: 7 of 8 SKIP relation florencetest2.Q1 .......................................... [[33mSKIP[0m]
+[0m09:57:31.104659 [info ] [Thread-1 (]: 8 of 8 SKIP relation florencetest2.Q3 .......................................... [[33mSKIP[0m]
+[0m09:57:31.104972 [debug] [Thread-2 (]: Finished running node model.florence_takehome.Q1
+[0m09:57:31.105233 [debug] [Thread-1 (]: Finished running node model.florence_takehome.Q3
+[0m09:57:31.106394 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:57:31.106700 [debug] [MainThread]: Connection 'model.florence_takehome.int_shifts' was properly closed.
+[0m09:57:31.106969 [debug] [MainThread]: Connection 'model.florence_takehome.test_table' was properly closed.
+[0m09:57:31.107247 [info ] [MainThread]: 
+[0m09:57:31.107463 [info ] [MainThread]: Finished running 6 view models, 1 table model, 1 incremental model in 0 hours 0 minutes and 7.59 seconds (7.59s).
+[0m09:57:31.108425 [debug] [MainThread]: Command end result
+[0m09:57:31.114368 [info ] [MainThread]: 
+[0m09:57:31.114606 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m09:57:31.114800 [info ] [MainThread]: 
+[0m09:57:31.114991 [error] [MainThread]:   Database Error in model int_shifts (models/intermediate/int_shifts.sql)
+  Query error: No matching signature for function TIMESTAMP_TRUNC for argument types: STRING, DATE_TIME_PART. Supported signatures: TIMESTAMP_TRUNC(TIMESTAMP, DATE_TIME_PART, [STRING]); TIMESTAMP_TRUNC(DATETIME, DATE_TIME_PART) at [16:18]
+  compiled Code at target/run/florence_takehome/models/intermediate/int_shifts.sql
+[0m09:57:31.115186 [info ] [MainThread]: 
+[0m09:57:31.115378 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=2 TOTAL=8
+[0m09:57:31.115851 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 8.173916, "process_user_time": 1.826981, "process_kernel_time": 0.958321, "process_mem_max_rss": "229080", "process_out_blocks": "3192", "command_success": false, "process_in_blocks": "0"}
+[0m09:57:31.116162 [debug] [MainThread]: Command `dbt run` failed at 09:57:31.116086 after 8.17 seconds
+[0m09:57:31.116386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706cb02ac5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706cb0113c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706cb45fff50>]}
+[0m09:57:31.116612 [debug] [MainThread]: Flushing usage events
+[0m09:58:06.228407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d7f7421d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d7df37d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d7b773a10>]}
+
+
+============================== 09:58:06.229691 | db8a0d55-6768-4386-989d-24e77772b396 ==============================
+[0m09:58:06.229691 [info ] [MainThread]: Running with dbt=1.7.11
+[0m09:58:06.229975 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/will/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/will/Documents/repos1/florence_dbt_2024/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:58:06.583807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d4987a210>]}
+[0m09:58:06.647824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d56b10c90>]}
+[0m09:58:06.648195 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m09:58:06.651478 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m09:58:06.665115 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:58:06.665314 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:58:06.668149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d49cab010>]}
+[0m09:58:06.674524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d4979aed0>]}
+[0m09:58:06.674777 [info ] [MainThread]: Found 8 models, 10 tests, 3 seeds, 0 sources, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m09:58:06.674978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d49846010>]}
+[0m09:58:06.675946 [info ] [MainThread]: 
+[0m09:58:06.676333 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:58:06.677125 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pure-harbor-419918'
+[0m09:58:06.677419 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:58:07.074277 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pure-harbor-419918, now list_pure-harbor-419918_florencetest2)
+[0m09:58:07.074586 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:58:07.461376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d7c497450>]}
+[0m09:58:07.461882 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m09:58:07.462099 [info ] [MainThread]: 
+[0m09:58:07.463513 [debug] [Thread-1 (]: Began running node model.florence_takehome.stg_locations
+[0m09:58:07.463788 [debug] [Thread-2 (]: Began running node model.florence_takehome.stg_shift_applications
+[0m09:58:07.464129 [info ] [Thread-1 (]: 1 of 8 START sql view model florencetest2.stg_locations ........................ [RUN]
+[0m09:58:07.464450 [info ] [Thread-2 (]: 2 of 8 START sql view model florencetest2.stg_shift_applications ............... [RUN]
+[0m09:58:07.465261 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pure-harbor-419918_florencetest2, now model.florence_takehome.stg_locations)
+[0m09:58:07.465716 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.florence_takehome.stg_shift_applications'
+[0m09:58:07.465953 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.stg_locations
+[0m09:58:07.466173 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.stg_shift_applications
+[0m09:58:07.469774 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.stg_locations"
+[0m09:58:07.471445 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.stg_shift_applications"
+[0m09:58:07.471909 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_locations (compile): 09:58:07.466314 => 09:58:07.471751
+[0m09:58:07.472194 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shift_applications (compile): 09:58:07.469963 => 09:58:07.472052
+[0m09:58:07.472458 [debug] [Thread-1 (]: Began executing node model.florence_takehome.stg_locations
+[0m09:58:07.472726 [debug] [Thread-2 (]: Began executing node model.florence_takehome.stg_shift_applications
+[0m09:58:07.488298 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.stg_locations"
+[0m09:58:07.490069 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.stg_shift_applications"
+[0m09:58:07.490505 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:58:07.491478 [debug] [Thread-1 (]: On model.florence_takehome.stg_locations: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_locations"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_locations`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+locations as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`locations`
+
+),
+
+staging_locations as 
+(
+select 
+unit_id,
+location_id,
+location_region_title,
+location_region_group_title,
+from 
+locations
+)
+
+select * 
+from staging_locations;
+
+
+[0m09:58:07.491781 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:58:07.510594 [debug] [Thread-2 (]: On model.florence_takehome.stg_shift_applications: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_shift_applications"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_shift_applications`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+shift_applications as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`shift_applications`
+
+),
+
+staging_shift_applications as 
+(
+select 
+shift_id,
+shift_application_id,
+shift_application_created_at,
+shift_application_status,
+shift_application_cancellation_reason_description,
+from 
+shift_applications
+)
+
+select * 
+from staging_shift_applications;
+
+
+[0m09:58:08.080649 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:3d1650f1-0cea-47aa-842b-1572845f0f8c&page=queryresults
+[0m09:58:08.123987 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:821a19bf-7184-4275-8625-67cb6bba198b&page=queryresults
+[0m09:58:08.443488 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shift_applications (execute): 09:58:07.488474 => 09:58:08.443346
+[0m09:58:08.443973 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d497c8d10>]}
+[0m09:58:08.444336 [info ] [Thread-2 (]: 2 of 8 OK created sql view model florencetest2.stg_shift_applications .......... [[32mCREATE VIEW (0 processed)[0m in 0.98s]
+[0m09:58:08.444687 [debug] [Thread-2 (]: Finished running node model.florence_takehome.stg_shift_applications
+[0m09:58:08.444946 [debug] [Thread-2 (]: Began running node model.florence_takehome.stg_shifts
+[0m09:58:08.445335 [info ] [Thread-2 (]: 3 of 8 START sql view model florencetest2.stg_shifts ........................... [RUN]
+[0m09:58:08.445722 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_shift_applications, now model.florence_takehome.stg_shifts)
+[0m09:58:08.445939 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.stg_shifts
+[0m09:58:08.447472 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.stg_shifts"
+[0m09:58:08.447896 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shifts (compile): 09:58:08.446071 => 09:58:08.447730
+[0m09:58:08.448169 [debug] [Thread-2 (]: Began executing node model.florence_takehome.stg_shifts
+[0m09:58:08.449802 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.stg_shifts"
+[0m09:58:08.450132 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:58:08.450961 [debug] [Thread-2 (]: On model.florence_takehome.stg_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.stg_shifts"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+  OPTIONS()
+  as --
+-- Locations from Staging
+--
+
+with
+
+shifts as (
+
+    select * from `pure-harbor-419918`.`florencetest2`.`shifts`
+
+),
+
+staging_shifts as 
+(
+select 
+shift_id,
+unit_id,
+--PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+from 
+shifts
+)
+
+select * 
+from staging_shifts;
+
+
+[0m09:58:08.523455 [debug] [Thread-1 (]: Timing info for model.florence_takehome.stg_locations (execute): 09:58:07.472890 => 09:58:08.523311
+[0m09:58:08.523953 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d497c9850>]}
+[0m09:58:08.524303 [info ] [Thread-1 (]: 1 of 8 OK created sql view model florencetest2.stg_locations ................... [[32mCREATE VIEW (0 processed)[0m in 1.06s]
+[0m09:58:08.524637 [debug] [Thread-1 (]: Finished running node model.florence_takehome.stg_locations
+[0m09:58:08.524894 [debug] [Thread-1 (]: Began running node model.florence_takehome.test_table
+[0m09:58:08.525207 [info ] [Thread-1 (]: 4 of 8 START sql table model florencetest2.test_table .......................... [RUN]
+[0m09:58:08.525617 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_locations, now model.florence_takehome.test_table)
+[0m09:58:08.525840 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.test_table
+[0m09:58:08.527451 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.test_table"
+[0m09:58:08.527826 [debug] [Thread-1 (]: Timing info for model.florence_takehome.test_table (compile): 09:58:08.525969 => 09:58:08.527697
+[0m09:58:08.528041 [debug] [Thread-1 (]: Began executing node model.florence_takehome.test_table
+[0m09:58:08.533282 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:58:08.923774 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.test_table"
+[0m09:58:08.924227 [debug] [Thread-1 (]: On model.florence_takehome.test_table: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.test_table"} */
+
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`test_table`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+select 1 as test
+    );
+  
+[0m09:58:09.089545 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:23cfd44b-9adf-4642-9296-311cffd23104&page=queryresults
+[0m09:58:09.434510 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:f2bf3952-a29b-44d6-91bd-794a9f91f1b0&page=queryresults
+[0m09:58:09.529266 [debug] [Thread-2 (]: Timing info for model.florence_takehome.stg_shifts (execute): 09:58:08.448333 => 09:58:09.529127
+[0m09:58:09.529735 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d49423dd0>]}
+[0m09:58:09.530093 [info ] [Thread-2 (]: 3 of 8 OK created sql view model florencetest2.stg_shifts ...................... [[32mCREATE VIEW (0 processed)[0m in 1.08s]
+[0m09:58:09.530446 [debug] [Thread-2 (]: Finished running node model.florence_takehome.stg_shifts
+[0m09:58:09.530694 [debug] [Thread-2 (]: Began running node model.florence_takehome.Q2
+[0m09:58:09.531008 [info ] [Thread-2 (]: 5 of 8 START sql view model florencetest2.Q2 ................................... [RUN]
+[0m09:58:09.531448 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.florence_takehome.stg_shifts, now model.florence_takehome.Q2)
+[0m09:58:09.531672 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.Q2
+[0m09:58:09.533383 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.Q2"
+[0m09:58:09.533752 [debug] [Thread-2 (]: Timing info for model.florence_takehome.Q2 (compile): 09:58:09.531803 => 09:58:09.533620
+[0m09:58:09.533970 [debug] [Thread-2 (]: Began executing node model.florence_takehome.Q2
+[0m09:58:09.535587 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.Q2"
+[0m09:58:09.535896 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:58:09.536726 [debug] [Thread-2 (]: On model.florence_takehome.Q2: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.Q2"} */
+
+
+  create or replace view `pure-harbor-419918`.`florencetest2`.`Q2`
+  OPTIONS()
+  as -- . Return shift ID and their latest created shift application ID.
+
+with max_apps as 
+(select 
+shift_id,
+shift_application_id,
+shift_application_created_at,
+ROW_NUMBER() OVER (PARTITION BY shift_id ORDER BY shift_application_created_at desc) AS recent__shift_application_created_at
+from  `pure-harbor-419918`.`florencetest2`.`stg_shift_applications`
+)
+
+-- all shifts (more than shift table...) and latest application date
+select shift_id, shift_application_id
+from max_apps
+where recent__shift_application_created_at = 1;
+
+
+[0m09:58:10.222210 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:756fb803-6924-4d78-944e-a0c6447f8595&page=queryresults
+[0m09:58:10.617842 [debug] [Thread-2 (]: Timing info for model.florence_takehome.Q2 (execute): 09:58:09.534101 => 09:58:10.617705
+[0m09:58:10.618342 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d497cba90>]}
+[0m09:58:10.618688 [info ] [Thread-2 (]: 5 of 8 OK created sql view model florencetest2.Q2 .............................. [[32mCREATE VIEW (0 processed)[0m in 1.09s]
+[0m09:58:10.619025 [debug] [Thread-2 (]: Finished running node model.florence_takehome.Q2
+[0m09:58:10.619280 [debug] [Thread-2 (]: Began running node model.florence_takehome.int_shifts
+[0m09:58:10.619583 [info ] [Thread-2 (]: 6 of 8 START sql incremental model florencetest2.int_shifts .................... [RUN]
+[0m09:58:10.619986 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.florence_takehome.Q2, now model.florence_takehome.int_shifts)
+[0m09:58:10.620208 [debug] [Thread-2 (]: Began compiling node model.florence_takehome.int_shifts
+[0m09:58:10.623473 [debug] [Thread-2 (]: Writing injected SQL for node "model.florence_takehome.int_shifts"
+[0m09:58:10.623897 [debug] [Thread-2 (]: Timing info for model.florence_takehome.int_shifts (compile): 09:58:10.620340 => 09:58:10.623729
+[0m09:58:10.624119 [debug] [Thread-2 (]: Began executing node model.florence_takehome.int_shifts
+[0m09:58:10.644124 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:58:11.047332 [debug] [Thread-2 (]: Writing runtime sql for node "model.florence_takehome.int_shifts"
+[0m09:58:11.047827 [debug] [Thread-2 (]: On model.florence_takehome.int_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.int_shifts"} */
+
+   
+      -- generated script to merge partitions into `pure-harbor-419918`.`florencetest2`.`int_shifts`
+      declare dbt_partitions_for_replacement array<timestamp>;
+
+      
+      
+       -- 1. create a temp table with model data
+        
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      
+    partition by timestamp_trunc(shift_start_date, day)
+    cluster by shift_start_date
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      --
+-- as incremental just for show...
+--
+
+
+
+select 
+shift_id,
+unit_id,
+--change to YYYY-MMDD format 
+-- I know i am doing this twice, but i wanted to show off.
+format_date('%Y-%m-%d',
+PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+)as shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+
+case when shift_status = 0 then true else false end
+as 
+shift_filled,
+-- Add a boolean column titled shift_filled to the shifts table. Hint: If
+-- shift_status equals 0, mark it as yes otherwise no.
+
+from `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+    );
+  
+      -- 2. define partitions to update
+      set (dbt_partitions_for_replacement) = (
+          select as struct
+              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+              array_agg(distinct timestamp_trunc(shift_start_date, day) IGNORE NULLS)
+          from `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      );
+
+      -- 3. run the merge statement
+      
+
+    merge into `pure-harbor-419918`.`florencetest2`.`int_shifts` as DBT_INTERNAL_DEST
+        using (
+        select
+        * from `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      ) as DBT_INTERNAL_SOURCE
+        on FALSE
+
+    when not matched by source
+         and timestamp_trunc(DBT_INTERNAL_DEST.shift_start_date, day) in unnest(dbt_partitions_for_replacement) 
+        then delete
+
+    when not matched then insert
+        (`shift_id`, `unit_id`, `shift_start_date`, `shift_worker_type`, `shift_status`, `shift_cancelled`, `shift_filled`)
+    values
+        (`shift_id`, `unit_id`, `shift_start_date`, `shift_worker_type`, `shift_status`, `shift_cancelled`, `shift_filled`)
+
+;
+
+      -- 4. clean up the temp table
+      drop table if exists `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+
+  
+
+
+  
+
+    
+[0m09:58:11.274473 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:034b3046-7c43-4020-8bcf-fa3fff7a8a6d&page=queryresults
+[0m09:58:11.942714 [debug] [Thread-1 (]: Timing info for model.florence_takehome.test_table (execute): 09:58:08.528171 => 09:58:11.942572
+[0m09:58:11.943222 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d5e906bd0>]}
+[0m09:58:11.943586 [info ] [Thread-1 (]: 4 of 8 OK created sql table model florencetest2.test_table ..................... [[32mCREATE TABLE (1.0 rows, 0 processed)[0m in 3.42s]
+[0m09:58:11.943940 [debug] [Thread-1 (]: Finished running node model.florence_takehome.test_table
+[0m09:58:12.403610 [debug] [Thread-2 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Query error: No matching signature for function TIMESTAMP_TRUNC for argument types: STRING, DATE_TIME_PART. Supported signatures: TIMESTAMP_TRUNC(TIMESTAMP, DATE_TIME_PART, [STRING]); TIMESTAMP_TRUNC(DATETIME, DATE_TIME_PART) at [16:18]')
+[0m09:58:13.105540 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:ca7d4174-444e-464e-ac31-dfb7204173ff&page=queryresults
+[0m09:58:14.000059 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:ca7d4174-444e-464e-ac31-dfb7204173ff&page=queryresults
+[0m09:58:14.000627 [debug] [Thread-2 (]: Timing info for model.florence_takehome.int_shifts (execute): 09:58:10.624257 => 09:58:14.000450
+[0m09:58:14.003381 [debug] [Thread-2 (]: Database Error in model int_shifts (models/intermediate/int_shifts.sql)
+  Query error: No matching signature for function TIMESTAMP_TRUNC for argument types: STRING, DATE_TIME_PART. Supported signatures: TIMESTAMP_TRUNC(TIMESTAMP, DATE_TIME_PART, [STRING]); TIMESTAMP_TRUNC(DATETIME, DATE_TIME_PART) at [16:18]
+  compiled Code at target/run/florence_takehome/models/intermediate/int_shifts.sql
+[0m09:58:14.003671 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db8a0d55-6768-4386-989d-24e77772b396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d49cb8a50>]}
+[0m09:58:14.004023 [error] [Thread-2 (]: 6 of 8 ERROR creating sql incremental model florencetest2.int_shifts ........... [[31mERROR[0m in 3.38s]
+[0m09:58:14.004356 [debug] [Thread-2 (]: Finished running node model.florence_takehome.int_shifts
+[0m09:58:14.005303 [debug] [Thread-1 (]: Began running node model.florence_takehome.Q1
+[0m09:58:14.005619 [debug] [Thread-2 (]: Began running node model.florence_takehome.Q3
+[0m09:58:14.005933 [info ] [Thread-1 (]: 7 of 8 SKIP relation florencetest2.Q1 .......................................... [[33mSKIP[0m]
+[0m09:58:14.006259 [info ] [Thread-2 (]: 8 of 8 SKIP relation florencetest2.Q3 .......................................... [[33mSKIP[0m]
+[0m09:58:14.006575 [debug] [Thread-1 (]: Finished running node model.florence_takehome.Q1
+[0m09:58:14.006830 [debug] [Thread-2 (]: Finished running node model.florence_takehome.Q3
+[0m09:58:14.007829 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:58:14.008046 [debug] [MainThread]: Connection 'model.florence_takehome.test_table' was properly closed.
+[0m09:58:14.008225 [debug] [MainThread]: Connection 'model.florence_takehome.int_shifts' was properly closed.
+[0m09:58:14.008433 [info ] [MainThread]: 
+[0m09:58:14.008683 [info ] [MainThread]: Finished running 6 view models, 1 table model, 1 incremental model in 0 hours 0 minutes and 7.33 seconds (7.33s).
+[0m09:58:14.009392 [debug] [MainThread]: Command end result
+[0m09:58:14.015810 [info ] [MainThread]: 
+[0m09:58:14.016076 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m09:58:14.016304 [info ] [MainThread]: 
+[0m09:58:14.016538 [error] [MainThread]:   Database Error in model int_shifts (models/intermediate/int_shifts.sql)
+  Query error: No matching signature for function TIMESTAMP_TRUNC for argument types: STRING, DATE_TIME_PART. Supported signatures: TIMESTAMP_TRUNC(TIMESTAMP, DATE_TIME_PART, [STRING]); TIMESTAMP_TRUNC(DATETIME, DATE_TIME_PART) at [16:18]
+  compiled Code at target/run/florence_takehome/models/intermediate/int_shifts.sql
+[0m09:58:14.016772 [info ] [MainThread]: 
+[0m09:58:14.017008 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=2 TOTAL=8
+[0m09:58:14.017521 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 7.807273, "process_user_time": 1.668353, "process_kernel_time": 0.946656, "process_mem_max_rss": "223812", "process_out_blocks": "2256", "command_success": false, "process_in_blocks": "0"}
+[0m09:58:14.017829 [debug] [MainThread]: Command `dbt run` failed at 09:58:14.017753 after 7.81 seconds
+[0m09:58:14.018045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d7b767c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d7b764210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1d7b767190>]}
+[0m09:58:14.018255 [debug] [MainThread]: Flushing usage events
+[0m10:01:06.546639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455e505fd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455e636db90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455e505fe90>]}
+
+
+============================== 10:01:06.547928 | 609b255a-d97d-4d08-bfc1-1cb0e7f266c0 ==============================
+[0m10:01:06.547928 [info ] [MainThread]: Running with dbt=1.7.11
+[0m10:01:06.548224 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/will/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/will/Documents/repos1/florence_dbt_2024/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run -m int_shifts', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:01:06.894359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '609b255a-d97d-4d08-bfc1-1cb0e7f266c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455af0b8ed0>]}
+[0m10:01:06.957343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '609b255a-d97d-4d08-bfc1-1cb0e7f266c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455af7373d0>]}
+[0m10:01:06.957725 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m10:01:06.961002 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m10:01:06.974704 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:01:06.974903 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:01:06.977698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '609b255a-d97d-4d08-bfc1-1cb0e7f266c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455af7e3990>]}
+[0m10:01:06.983892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '609b255a-d97d-4d08-bfc1-1cb0e7f266c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455af0d8590>]}
+[0m10:01:06.984139 [info ] [MainThread]: Found 8 models, 10 tests, 3 seeds, 0 sources, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m10:01:06.984338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '609b255a-d97d-4d08-bfc1-1cb0e7f266c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455aef00a90>]}
+[0m10:01:06.985080 [info ] [MainThread]: 
+[0m10:01:06.985469 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:01:06.986170 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pure-harbor-419918'
+[0m10:01:06.986513 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:01:07.400991 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pure-harbor-419918, now list_pure-harbor-419918_florencetest2)
+[0m10:01:07.401293 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:01:07.802823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '609b255a-d97d-4d08-bfc1-1cb0e7f266c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455af0dbb90>]}
+[0m10:01:07.803349 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m10:01:07.803581 [info ] [MainThread]: 
+[0m10:01:07.804884 [debug] [Thread-1 (]: Began running node model.florence_takehome.int_shifts
+[0m10:01:07.805196 [info ] [Thread-1 (]: 1 of 1 START sql incremental model florencetest2.int_shifts .................... [RUN]
+[0m10:01:07.805604 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pure-harbor-419918_florencetest2, now model.florence_takehome.int_shifts)
+[0m10:01:07.805829 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.int_shifts
+[0m10:01:07.811497 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.int_shifts"
+[0m10:01:07.811924 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (compile): 10:01:07.805963 => 10:01:07.811769
+[0m10:01:07.812161 [debug] [Thread-1 (]: Began executing node model.florence_takehome.int_shifts
+[0m10:01:07.833440 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:01:08.288388 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.int_shifts"
+[0m10:01:08.288873 [debug] [Thread-1 (]: On model.florence_takehome.int_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.int_shifts"} */
+
+   
+      -- generated script to merge partitions into `pure-harbor-419918`.`florencetest2`.`int_shifts`
+      declare dbt_partitions_for_replacement array<timestamp>;
+
+      
+      
+       -- 1. create a temp table with model data
+        
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      
+    partition by timestamp_trunc(shift_start_date, day)
+    cluster by shift_start_date
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      --
+-- as incremental just for show...
+--
+
+
+
+select 
+shift_id,
+unit_id,
+--change to YYYY-MMDD format 
+-- I know i am doing this twice, but i wanted to show off.
+format_date('%Y-%m-%d',
+PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+)as shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+
+case when shift_status = 0 then true else false end
+as 
+shift_filled,
+-- Add a boolean column titled shift_filled to the shifts table. Hint: If
+-- shift_status equals 0, mark it as yes otherwise no.
+
+from `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+    );
+  
+      -- 2. define partitions to update
+      set (dbt_partitions_for_replacement) = (
+          select as struct
+              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+              array_agg(distinct timestamp_trunc(shift_start_date, day) IGNORE NULLS)
+          from `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      );
+
+      -- 3. run the merge statement
+      
+
+    merge into `pure-harbor-419918`.`florencetest2`.`int_shifts` as DBT_INTERNAL_DEST
+        using (
+        select
+        * from `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      ) as DBT_INTERNAL_SOURCE
+        on FALSE
+
+    when not matched by source
+         and timestamp_trunc(DBT_INTERNAL_DEST.shift_start_date, day) in unnest(dbt_partitions_for_replacement) 
+        then delete
+
+    when not matched then insert
+        (`shift_id`, `unit_id`, `shift_start_date`, `shift_worker_type`, `shift_status`, `shift_cancelled`, `shift_filled`)
+    values
+        (`shift_id`, `unit_id`, `shift_start_date`, `shift_worker_type`, `shift_status`, `shift_cancelled`, `shift_filled`)
+
+;
+
+      -- 4. clean up the temp table
+      drop table if exists `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+
+  
+
+
+  
+
+    
+[0m10:01:08.592305 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:83d71104-9b8f-479e-8344-27fbc7cd6a93&page=queryresults
+[0m10:01:09.498241 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Query error: No matching signature for function TIMESTAMP_TRUNC for argument types: STRING, DATE_TIME_PART. Supported signatures: TIMESTAMP_TRUNC(TIMESTAMP, DATE_TIME_PART, [STRING]); TIMESTAMP_TRUNC(DATETIME, DATE_TIME_PART) at [16:18]')
+[0m10:01:09.749005 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:bf438c4a-d2f7-4fea-947b-318a7c7b279d&page=queryresults
+[0m10:01:11.035622 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:bf438c4a-d2f7-4fea-947b-318a7c7b279d&page=queryresults
+[0m10:01:11.036109 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (execute): 10:01:07.812295 => 10:01:11.035955
+[0m10:01:11.038682 [debug] [Thread-1 (]: Database Error in model int_shifts (models/intermediate/int_shifts.sql)
+  Query error: No matching signature for function TIMESTAMP_TRUNC for argument types: STRING, DATE_TIME_PART. Supported signatures: TIMESTAMP_TRUNC(TIMESTAMP, DATE_TIME_PART, [STRING]); TIMESTAMP_TRUNC(DATETIME, DATE_TIME_PART) at [16:18]
+  compiled Code at target/run/florence_takehome/models/intermediate/int_shifts.sql
+[0m10:01:11.038989 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '609b255a-d97d-4d08-bfc1-1cb0e7f266c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455aee7bfd0>]}
+[0m10:01:11.039364 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model florencetest2.int_shifts ........... [[31mERROR[0m in 3.23s]
+[0m10:01:11.039712 [debug] [Thread-1 (]: Finished running node model.florence_takehome.int_shifts
+[0m10:01:11.041114 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:01:11.041346 [debug] [MainThread]: Connection 'model.florence_takehome.int_shifts' was properly closed.
+[0m10:01:11.041553 [info ] [MainThread]: 
+[0m10:01:11.041778 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 4.06 seconds (4.06s).
+[0m10:01:11.042148 [debug] [MainThread]: Command end result
+[0m10:01:11.047790 [info ] [MainThread]: 
+[0m10:01:11.048030 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m10:01:11.048221 [info ] [MainThread]: 
+[0m10:01:11.048408 [error] [MainThread]:   Database Error in model int_shifts (models/intermediate/int_shifts.sql)
+  Query error: No matching signature for function TIMESTAMP_TRUNC for argument types: STRING, DATE_TIME_PART. Supported signatures: TIMESTAMP_TRUNC(TIMESTAMP, DATE_TIME_PART, [STRING]); TIMESTAMP_TRUNC(DATETIME, DATE_TIME_PART) at [16:18]
+  compiled Code at target/run/florence_takehome/models/intermediate/int_shifts.sql
+[0m10:01:11.048594 [info ] [MainThread]: 
+[0m10:01:11.048785 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m10:01:11.049262 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 4.5199165, "process_user_time": 1.545715, "process_kernel_time": 0.870024, "process_mem_max_rss": "215832", "process_out_blocks": "2088", "command_success": false, "process_in_blocks": "0"}
+[0m10:01:11.049582 [debug] [MainThread]: Command `dbt run` failed at 10:01:11.049501 after 4.52 seconds
+[0m10:01:11.049820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455e5068a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455e50b6050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7455e50b5790>]}
+[0m10:01:11.050039 [debug] [MainThread]: Flushing usage events
+[0m10:03:55.074356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713ba73cba50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713ba8250490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713ba86df350>]}
+
+
+============================== 10:03:55.075649 | f1e5ceba-857e-4c0c-bd36-679d8810ff66 ==============================
+[0m10:03:55.075649 [info ] [MainThread]: Running with dbt=1.7.11
+[0m10:03:55.075956 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/will/Documents/repos1/florence_dbt_2024/logs', 'fail_fast': 'False', 'profiles_dir': '/home/will/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run -m int_shifts', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:03:55.429892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f1e5ceba-857e-4c0c-bd36-679d8810ff66', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713b75586210>]}
+[0m10:03:55.495036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f1e5ceba-857e-4c0c-bd36-679d8810ff66', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713b7af6ff50>]}
+[0m10:03:55.495427 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m10:03:55.499157 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m10:03:55.512895 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:03:55.513219 [debug] [MainThread]: Partial parsing: updated file: florence_takehome://models/intermediate/int_shifts.sql
+[0m10:03:55.633901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f1e5ceba-857e-4c0c-bd36-679d8810ff66', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713b751d4b50>]}
+[0m10:03:55.640342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f1e5ceba-857e-4c0c-bd36-679d8810ff66', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713b7525d610>]}
+[0m10:03:55.640584 [info ] [MainThread]: Found 8 models, 10 tests, 3 seeds, 0 sources, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m10:03:55.640806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f1e5ceba-857e-4c0c-bd36-679d8810ff66', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713b74907bd0>]}
+[0m10:03:55.641567 [info ] [MainThread]: 
+[0m10:03:55.641967 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:03:55.642601 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pure-harbor-419918'
+[0m10:03:55.642892 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:03:56.093485 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pure-harbor-419918, now list_pure-harbor-419918_florencetest2)
+[0m10:03:56.093851 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:03:56.462696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f1e5ceba-857e-4c0c-bd36-679d8810ff66', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713b74d888d0>]}
+[0m10:03:56.463224 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m10:03:56.463446 [info ] [MainThread]: 
+[0m10:03:56.464986 [debug] [Thread-1 (]: Began running node model.florence_takehome.int_shifts
+[0m10:03:56.465305 [info ] [Thread-1 (]: 1 of 1 START sql incremental model florencetest2.int_shifts .................... [RUN]
+[0m10:03:56.465693 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pure-harbor-419918_florencetest2, now model.florence_takehome.int_shifts)
+[0m10:03:56.465914 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.int_shifts
+[0m10:03:56.469781 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.int_shifts"
+[0m10:03:56.470189 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (compile): 10:03:56.466050 => 10:03:56.470050
+[0m10:03:56.470427 [debug] [Thread-1 (]: Began executing node model.florence_takehome.int_shifts
+[0m10:03:56.491740 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:03:56.897789 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.int_shifts"
+[0m10:03:56.898277 [debug] [Thread-1 (]: On model.florence_takehome.int_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.int_shifts"} */
+
+   
+      -- generated script to merge partitions into `pure-harbor-419918`.`florencetest2`.`int_shifts`
+      declare dbt_partitions_for_replacement array<timestamp>;
+
+      
+      
+       -- 1. create a temp table with model data
+        
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      
+    partition by timestamp_trunc(shift_start_date, day)
+    cluster by shift_start_date
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      --
+-- as incremental just for show...
+--
+
+
+
+select 
+shift_id,
+unit_id,
+--change to YYYY-MMDD format 
+-- I know i am doing this poorly now
+cast(format_date('%Y-%m-%d',
+PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+) as date) as shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+
+case when shift_status = 0 then true else false end
+as 
+shift_filled,
+-- Add a boolean column titled shift_filled to the shifts table. Hint: If
+-- shift_status equals 0, mark it as yes otherwise no.
+
+from `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+    );
+  
+      -- 2. define partitions to update
+      set (dbt_partitions_for_replacement) = (
+          select as struct
+              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+              array_agg(distinct timestamp_trunc(shift_start_date, day) IGNORE NULLS)
+          from `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      );
+
+      -- 3. run the merge statement
+      
+
+    merge into `pure-harbor-419918`.`florencetest2`.`int_shifts` as DBT_INTERNAL_DEST
+        using (
+        select
+        * from `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      ) as DBT_INTERNAL_SOURCE
+        on FALSE
+
+    when not matched by source
+         and timestamp_trunc(DBT_INTERNAL_DEST.shift_start_date, day) in unnest(dbt_partitions_for_replacement) 
+        then delete
+
+    when not matched then insert
+        (`shift_id`, `unit_id`, `shift_start_date`, `shift_worker_type`, `shift_status`, `shift_cancelled`, `shift_filled`)
+    values
+        (`shift_id`, `unit_id`, `shift_start_date`, `shift_worker_type`, `shift_status`, `shift_cancelled`, `shift_filled`)
+
+;
+
+      -- 4. clean up the temp table
+      drop table if exists `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+
+  
+
+
+  
+
+    
+[0m10:03:57.174539 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:83682969-4053-492c-bf16-eb397596079e&page=queryresults
+[0m10:03:58.316598 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Query error: PARTITION BY expression must be DATE(<timestamp_column>), DATE(<datetime_column>), DATETIME_TRUNC(<datetime_column>, DAY/HOUR/MONTH/YEAR), a DATE column, TIMESTAMP_TRUNC(<timestamp_column>, DAY/HOUR/MONTH/YEAR), DATE_TRUNC(<date_column>, MONTH/YEAR), or RANGE_BUCKET(<int64_column>, GENERATE_ARRAY(<int64_value>, <int64_value>[, <int64_value>])) at [14:5]')
+[0m10:03:59.475517 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:6545c412-f2ae-49b1-88a0-d584d7a14ec1&page=queryresults
+[0m10:04:00.670217 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:6545c412-f2ae-49b1-88a0-d584d7a14ec1&page=queryresults
+[0m10:04:00.670758 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (execute): 10:03:56.470563 => 10:04:00.670607
+[0m10:04:00.673356 [debug] [Thread-1 (]: Database Error in model int_shifts (models/intermediate/int_shifts.sql)
+  Query error: PARTITION BY expression must be DATE(<timestamp_column>), DATE(<datetime_column>), DATETIME_TRUNC(<datetime_column>, DAY/HOUR/MONTH/YEAR), a DATE column, TIMESTAMP_TRUNC(<timestamp_column>, DAY/HOUR/MONTH/YEAR), DATE_TRUNC(<date_column>, MONTH/YEAR), or RANGE_BUCKET(<int64_column>, GENERATE_ARRAY(<int64_value>, <int64_value>[, <int64_value>])) at [14:5]
+  compiled Code at target/run/florence_takehome/models/intermediate/int_shifts.sql
+[0m10:04:00.673664 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f1e5ceba-857e-4c0c-bd36-679d8810ff66', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713b749abb90>]}
+[0m10:04:00.674040 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model florencetest2.int_shifts ........... [[31mERROR[0m in 4.21s]
+[0m10:04:00.674389 [debug] [Thread-1 (]: Finished running node model.florence_takehome.int_shifts
+[0m10:04:00.675765 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:04:00.675990 [debug] [MainThread]: Connection 'model.florence_takehome.int_shifts' was properly closed.
+[0m10:04:00.676210 [info ] [MainThread]: 
+[0m10:04:00.676439 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 5.03 seconds (5.03s).
+[0m10:04:00.676839 [debug] [MainThread]: Command end result
+[0m10:04:00.682359 [info ] [MainThread]: 
+[0m10:04:00.682611 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m10:04:00.682820 [info ] [MainThread]: 
+[0m10:04:00.683028 [error] [MainThread]:   Database Error in model int_shifts (models/intermediate/int_shifts.sql)
+  Query error: PARTITION BY expression must be DATE(<timestamp_column>), DATE(<datetime_column>), DATETIME_TRUNC(<datetime_column>, DAY/HOUR/MONTH/YEAR), a DATE column, TIMESTAMP_TRUNC(<timestamp_column>, DAY/HOUR/MONTH/YEAR), DATE_TRUNC(<date_column>, MONTH/YEAR), or RANGE_BUCKET(<int64_column>, GENERATE_ARRAY(<int64_value>, <int64_value>[, <int64_value>])) at [14:5]
+  compiled Code at target/run/florence_takehome/models/intermediate/int_shifts.sql
+[0m10:04:00.683249 [info ] [MainThread]: 
+[0m10:04:00.683466 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m10:04:00.683959 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 5.6273193, "process_user_time": 1.52548, "process_kernel_time": 0.970562, "process_mem_max_rss": "224412", "process_out_blocks": "3032", "command_success": false, "process_in_blocks": "0"}
+[0m10:04:00.684271 [debug] [MainThread]: Command `dbt run` failed at 10:04:00.684192 after 5.63 seconds
+[0m10:04:00.684495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713ba7413890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713ba74133d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713bab7a5010>]}
+[0m10:04:00.684709 [debug] [MainThread]: Flushing usage events
+[0m10:04:14.597500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f188833790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f18887fb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f188ed2250>]}
+
+
+============================== 10:04:14.598780 | eb5c6f11-9363-4555-bcbe-24ae39533a63 ==============================
+[0m10:04:14.598780 [info ] [MainThread]: Running with dbt=1.7.11
+[0m10:04:14.599073 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/will/Documents/repos1/florence_dbt_2024/logs', 'version_check': 'True', 'profiles_dir': '/home/will/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run -m int_shifts', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:04:14.943306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eb5c6f11-9363-4555-bcbe-24ae39533a63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f1568a25d0>]}
+[0m10:04:15.007230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'eb5c6f11-9363-4555-bcbe-24ae39533a63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f156cfa110>]}
+[0m10:04:15.007604 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m10:04:15.010892 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m10:04:15.024493 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:04:15.024805 [debug] [MainThread]: Partial parsing: updated file: florence_takehome://models/intermediate/int_shifts.sql
+[0m10:04:15.144538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'eb5c6f11-9363-4555-bcbe-24ae39533a63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f1567b40d0>]}
+[0m10:04:15.151276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'eb5c6f11-9363-4555-bcbe-24ae39533a63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f155f0fa90>]}
+[0m10:04:15.151527 [info ] [MainThread]: Found 8 models, 10 tests, 3 seeds, 0 sources, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m10:04:15.151732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'eb5c6f11-9363-4555-bcbe-24ae39533a63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f1566c3410>]}
+[0m10:04:15.152500 [info ] [MainThread]: 
+[0m10:04:15.152894 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:04:15.153465 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pure-harbor-419918'
+[0m10:04:15.153699 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:04:15.577669 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pure-harbor-419918, now list_pure-harbor-419918_florencetest2)
+[0m10:04:15.577998 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:04:15.952576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'eb5c6f11-9363-4555-bcbe-24ae39533a63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f156599ad0>]}
+[0m10:04:15.953053 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m10:04:15.953289 [info ] [MainThread]: 
+[0m10:04:15.954812 [debug] [Thread-1 (]: Began running node model.florence_takehome.int_shifts
+[0m10:04:15.955159 [info ] [Thread-1 (]: 1 of 1 START sql incremental model florencetest2.int_shifts .................... [RUN]
+[0m10:04:15.955600 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pure-harbor-419918_florencetest2, now model.florence_takehome.int_shifts)
+[0m10:04:15.955846 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.int_shifts
+[0m10:04:15.959423 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.int_shifts"
+[0m10:04:15.959789 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (compile): 10:04:15.955990 => 10:04:15.959661
+[0m10:04:15.960013 [debug] [Thread-1 (]: Began executing node model.florence_takehome.int_shifts
+[0m10:04:15.979530 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:04:16.435355 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.int_shifts"
+[0m10:04:16.435847 [debug] [Thread-1 (]: On model.florence_takehome.int_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.int_shifts"} */
+
+   
+      -- generated script to merge partitions into `pure-harbor-419918`.`florencetest2`.`int_shifts`
+      declare dbt_partitions_for_replacement array<date>;
+
+      
+      
+       -- 1. create a temp table with model data
+        
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      
+    partition by shift_start_date
+    cluster by shift_start_date
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      --
+-- as incremental just for show...
+--
+
+
+
+select 
+shift_id,
+unit_id,
+--change to YYYY-MMDD format 
+-- I know i am doing this poorly now
+cast(format_date('%Y-%m-%d',
+PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+) as date) as shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+
+case when shift_status = 0 then true else false end
+as 
+shift_filled,
+-- Add a boolean column titled shift_filled to the shifts table. Hint: If
+-- shift_status equals 0, mark it as yes otherwise no.
+
+from `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+    );
+  
+      -- 2. define partitions to update
+      set (dbt_partitions_for_replacement) = (
+          select as struct
+              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+              array_agg(distinct date(shift_start_date) IGNORE NULLS)
+          from `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      );
+
+      -- 3. run the merge statement
+      
+
+    merge into `pure-harbor-419918`.`florencetest2`.`int_shifts` as DBT_INTERNAL_DEST
+        using (
+        select
+        * from `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+      ) as DBT_INTERNAL_SOURCE
+        on FALSE
+
+    when not matched by source
+         and date(DBT_INTERNAL_DEST.shift_start_date) in unnest(dbt_partitions_for_replacement) 
+        then delete
+
+    when not matched then insert
+        (`shift_id`, `unit_id`, `shift_start_date`, `shift_worker_type`, `shift_status`, `shift_cancelled`, `shift_filled`)
+    values
+        (`shift_id`, `unit_id`, `shift_start_date`, `shift_worker_type`, `shift_status`, `shift_cancelled`, `shift_filled`)
+
+;
+
+      -- 4. clean up the temp table
+      drop table if exists `pure-harbor-419918`.`florencetest2`.`int_shifts__dbt_tmp`
+
+  
+
+
+  
+
+    
+[0m10:04:16.735122 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:bb34ad7e-9f15-496b-89e0-294154b9f3ff&page=queryresults
+[0m10:04:21.480322 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Query error: Value has type DATE which cannot be inserted into column shift_start_date, which has type STRING at [75:33]')
+[0m10:04:21.856754 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:c249eea6-b858-4379-961c-4bfd5e604d97&page=queryresults
+[0m10:04:44.042796 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:c249eea6-b858-4379-961c-4bfd5e604d97&page=queryresults
+[0m10:04:44.043388 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (execute): 10:04:15.960133 => 10:04:44.043210
+[0m10:04:44.045965 [debug] [Thread-1 (]: Database Error in model int_shifts (models/intermediate/int_shifts.sql)
+  Query error: Value has type DATE which cannot be inserted into column shift_start_date, which has type STRING at [75:33]
+  compiled Code at target/run/florence_takehome/models/intermediate/int_shifts.sql
+[0m10:04:44.046283 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eb5c6f11-9363-4555-bcbe-24ae39533a63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f156669a90>]}
+[0m10:04:44.046658 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model florencetest2.int_shifts ........... [[31mERROR[0m in 28.09s]
+[0m10:04:44.047019 [debug] [Thread-1 (]: Finished running node model.florence_takehome.int_shifts
+[0m10:04:44.048343 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:04:44.048561 [debug] [MainThread]: Connection 'model.florence_takehome.int_shifts' was properly closed.
+[0m10:04:44.048766 [info ] [MainThread]: 
+[0m10:04:44.048971 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 28.90 seconds (28.90s).
+[0m10:04:44.049312 [debug] [MainThread]: Command end result
+[0m10:04:44.054771 [info ] [MainThread]: 
+[0m10:04:44.055012 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m10:04:44.055208 [info ] [MainThread]: 
+[0m10:04:44.055394 [error] [MainThread]:   Database Error in model int_shifts (models/intermediate/int_shifts.sql)
+  Query error: Value has type DATE which cannot be inserted into column shift_start_date, which has type STRING at [75:33]
+  compiled Code at target/run/florence_takehome/models/intermediate/int_shifts.sql
+[0m10:04:44.055599 [info ] [MainThread]: 
+[0m10:04:44.055810 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m10:04:44.056289 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 29.476292, "process_user_time": 1.599499, "process_kernel_time": 0.874723, "process_mem_max_rss": "223648", "process_out_blocks": "3080", "command_success": false, "process_in_blocks": "0"}
+[0m10:04:44.056612 [debug] [MainThread]: Command `dbt run` failed at 10:04:44.056533 after 29.48 seconds
+[0m10:04:44.056840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f18883c690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f188889c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f18cbe4190>]}
+[0m10:04:44.057056 [debug] [MainThread]: Flushing usage events
+[0m10:05:01.654708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7756bc83bc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7756bce4fb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7756bc83b910>]}
+
+
+============================== 10:05:01.655976 | d7e9ad85-b3d9-4976-bbfa-e2bd79b50b2d ==============================
+[0m10:05:01.655976 [info ] [MainThread]: Running with dbt=1.7.11
+[0m10:05:01.656264 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/will/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/will/Documents/repos1/florence_dbt_2024/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run -m int_shifts', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:05:02.004666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd7e9ad85-b3d9-4976-bbfa-e2bd79b50b2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77568ab03450>]}
+[0m10:05:02.068642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd7e9ad85-b3d9-4976-bbfa-e2bd79b50b2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77568ac8eb50>]}
+[0m10:05:02.069013 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m10:05:02.072315 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m10:05:02.085919 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:05:02.086119 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:05:02.088945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd7e9ad85-b3d9-4976-bbfa-e2bd79b50b2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7756bc8b02d0>]}
+[0m10:05:02.095177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd7e9ad85-b3d9-4976-bbfa-e2bd79b50b2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77568a8ecc10>]}
+[0m10:05:02.095425 [info ] [MainThread]: Found 8 models, 10 tests, 3 seeds, 0 sources, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m10:05:02.095626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd7e9ad85-b3d9-4976-bbfa-e2bd79b50b2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7756badfe710>]}
+[0m10:05:02.096373 [info ] [MainThread]: 
+[0m10:05:02.096778 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:05:02.097409 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pure-harbor-419918'
+[0m10:05:02.097690 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:05:02.486984 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pure-harbor-419918, now list_pure-harbor-419918_florencetest2)
+[0m10:05:02.487304 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:05:02.893160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd7e9ad85-b3d9-4976-bbfa-e2bd79b50b2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77568a96de10>]}
+[0m10:05:02.893677 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m10:05:02.893904 [info ] [MainThread]: 
+[0m10:05:02.895267 [debug] [Thread-1 (]: Began running node model.florence_takehome.int_shifts
+[0m10:05:02.895640 [info ] [Thread-1 (]: 1 of 1 START sql incremental model florencetest2.int_shifts .................... [RUN]
+[0m10:05:02.896039 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pure-harbor-419918_florencetest2, now model.florence_takehome.int_shifts)
+[0m10:05:02.896266 [debug] [Thread-1 (]: Began compiling node model.florence_takehome.int_shifts
+[0m10:05:02.901895 [debug] [Thread-1 (]: Writing injected SQL for node "model.florence_takehome.int_shifts"
+[0m10:05:02.902338 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (compile): 10:05:02.896399 => 10:05:02.902192
+[0m10:05:02.902571 [debug] [Thread-1 (]: Began executing node model.florence_takehome.int_shifts
+[0m10:05:02.939042 [debug] [Thread-1 (]: Writing runtime sql for node "model.florence_takehome.int_shifts"
+[0m10:05:02.939383 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:05:02.940244 [debug] [Thread-1 (]: On model.florence_takehome.int_shifts: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "florence_takehome", "target_name": "dev", "node_id": "model.florence_takehome.int_shifts"} */
+
+  
+    
+
+    create or replace table `pure-harbor-419918`.`florencetest2`.`int_shifts`
+      
+    partition by shift_start_date
+    cluster by shift_start_date
+
+    OPTIONS()
+    as (
+      --
+-- as incremental just for show...
+--
+
+
+
+select 
+shift_id,
+unit_id,
+--change to YYYY-MMDD format 
+-- I know i am doing this poorly now
+cast(format_date('%Y-%m-%d',
+PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
+) as date) as shift_start_date,
+shift_worker_type,
+shift_status,
+shift_cancelled,
+
+case when shift_status = 0 then true else false end
+as 
+shift_filled,
+-- Add a boolean column titled shift_filled to the shifts table. Hint: If
+-- shift_status equals 0, mark it as yes otherwise no.
+
+from `pure-harbor-419918`.`florencetest2`.`stg_shifts`
+    );
+  
+[0m10:05:03.689474 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pure-harbor-419918&j=bq:US:3ff1bccc-985e-4b13-bdc2-eb2d7fff5a9b&page=queryresults
+[0m10:05:06.835864 [debug] [Thread-1 (]: Timing info for model.florence_takehome.int_shifts (execute): 10:05:02.902706 => 10:05:06.835720
+[0m10:05:06.836361 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7e9ad85-b3d9-4976-bbfa-e2bd79b50b2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77568a56ec10>]}
+[0m10:05:06.836742 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model florencetest2.int_shifts ............... [[32mCREATE TABLE (12.7k rows, 844.8 KiB processed)[0m in 3.94s]
+[0m10:05:06.837093 [debug] [Thread-1 (]: Finished running node model.florence_takehome.int_shifts
+[0m10:05:06.838226 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:05:06.838448 [debug] [MainThread]: Connection 'model.florence_takehome.int_shifts' was properly closed.
+[0m10:05:06.838652 [info ] [MainThread]: 
+[0m10:05:06.838859 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 4.74 seconds (4.74s).
+[0m10:05:06.839220 [debug] [MainThread]: Command end result
+[0m10:05:06.844771 [info ] [MainThread]: 
+[0m10:05:06.845106 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:05:06.845398 [info ] [MainThread]: 
+[0m10:05:06.845720 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m10:05:06.846393 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.208948, "process_user_time": 1.408949, "process_kernel_time": 0.990251, "process_mem_max_rss": "214584", "process_out_blocks": "2080", "process_in_blocks": "0"}
+[0m10:05:06.846847 [debug] [MainThread]: Command `dbt run` succeeded at 10:05:06.846757 after 5.21 seconds
+[0m10:05:06.847081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7756bc8ab190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7756bc8ab2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7756c0bb4310>]}
+[0m10:05:06.847304 [debug] [MainThread]: Flushing usage events

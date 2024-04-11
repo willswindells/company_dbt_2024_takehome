@@ -6,7 +6,7 @@ shift_id,
 shift_application_id,
 shift_application_created_at,
 ROW_NUMBER() OVER (PARTITION BY shift_id ORDER BY shift_application_created_at desc) AS recent__shift_application_created_at
-from `shift_applications`
+from  {{ref('stg_shift_applications')}}
 )
 
 -- all shifts (more than shift table...) and latest application date
