@@ -1,15 +1,27 @@
 --
+-- as incremental just for show...
 --
---
+
+{{
+  config(
+    materialized = 'incremental',
+    incremental_strategy = 'insert_overwrite',
+    cluster_by = 'shift_start_date',
+    partition_by = {
+        'field': 'shift_start_date',
+        'data_type': 'date',
+    },
+  )
+}}
 
 select 
 shift_id,
 unit_id,
 --change to YYYY-MMDD format 
--- I know i am doing this twice, but i wanted to show off.
-format_date('%Y-%m-%d',
+-- I know i am doing this poorly now
+cast(format_date('%Y-%m-%d',
 PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%E*S ', left(shift_start_date,19)) 
-)as shift_start_date,
+) as date) as shift_start_date,
 shift_worker_type,
 shift_status,
 shift_cancelled,

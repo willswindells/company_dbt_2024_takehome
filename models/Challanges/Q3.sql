@@ -9,11 +9,11 @@ sum(case when shift_application_status = 'Approved' then 1 else 0 end)
     /
 count(distinct apps.shift_id) 
 as Shift_fill_rate
-from `stg_shift_applications` apps  
+from {{ref('stg_shift_applications')}} apps  
 left join 
-  `stg_shifts` shifts on apps.shift_id = shifts.shift_id
+  {{ref('int_shifts')}}shifts on apps.shift_id = shifts.shift_id
 left join
-  `stg_locations`  locs on shifts.unit_id = locs.unit_id
+  {{ref('stg_locations')}}  locs on shifts.unit_id = locs.unit_id
 where 
   shifts.shift_worker_type = 'carer'
 --  and shift_cancelled <> 'Yes'
