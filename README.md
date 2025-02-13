@@ -1,2 +1,2 @@
-# florence_dbt_2024
+# Company Takehome
 dbt_setup_takehome
